@@ -20,9 +20,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLSUnitModelTest.superclass||$boot.dnu).fn.prototype._setUp.apply($recv(self), []));
+$globals.HLSUnitModelTest.superclass.fn.prototype._setUp.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -614,7 +614,9 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-return $recv(self._class())._package();
+var $1;
+$1=$recv(self._class())._package();
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"thisPackage",{},$globals.HLSUnitModelTest)});
 //>>excludeEnd("ctx");

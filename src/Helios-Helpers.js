@@ -17,7 +17,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2,$receiver;
+var $1,$3,$2,$receiver;
 $1=self._next();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["next"]=1;
@@ -27,12 +27,13 @@ return false;
 } else {
 $1;
 };
-$2=self._doClassify();
-if($core.assert($2)){
-return true;
+$3=self._doClassify();
+if($core.assert($3)){
+$2=true;
 } else {
-return $recv(self._next())._classify();
+$2=$recv(self._next())._classify();
 };
+return $2;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"classify",{},$globals.HLClassifier)});
 //>>excludeEnd("ctx");
@@ -76,7 +77,9 @@ selector: "method",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@method"];
+var $1;
+$1=self["@method"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -127,7 +130,9 @@ selector: "next",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@next"];
+var $1;
+$1=self["@next"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -285,7 +290,7 @@ function $Dictionary(){return $globals.Dictionary||(typeof Dictionary=="undefine
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
+var $1,$2;
 self["@prefixMapping"]=$recv($Dictionary())._new();
 $1=self["@prefixMapping"];
 $recv($1)._at_put_("test","tests");
@@ -332,7 +337,7 @@ $recv($1)._at_put_("as","converting");
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["at:put:"]=11;
 //>>excludeEnd("ctx");
-$recv($1)._at_put_("new","instance creation");
+$2=$recv($1)._at_put_("new","instance creation");
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"buildPrefixDictionary",{},$globals.HLPrefixClassifier)});
@@ -399,9 +404,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLPrefixClassifier.superclass||$boot.dnu).fn.prototype._initialize.apply($recv(self), []));
+$globals.HLPrefixClassifier.superclass.fn.prototype._initialize.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -613,9 +618,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLGenerationOutput.superclass||$boot.dnu).fn.prototype._initialize.apply($recv(self), []));
+$globals.HLGenerationOutput.superclass.fn.prototype._initialize.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -640,7 +645,9 @@ selector: "protocol",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@protocol"];
+var $1;
+$1=self["@protocol"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -677,7 +684,9 @@ selector: "sourceCodes",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@sourceCodes"];
+var $1;
+$1=self["@sourceCodes"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -714,7 +723,9 @@ selector: "targetClass",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@targetClass"];
+var $1;
+$1=self["@targetClass"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -785,10 +796,10 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
+var $1,$2;
 $1=self["@firstClassifier"];
 $recv($1)._method_(aMethod);
-$recv($1)._classify();
+$2=$recv($1)._classify();
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"classify:",{aMethod:aMethod},$globals.HLMethodClassifier)});
@@ -846,9 +857,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLMethodClassifier.superclass||$boot.dnu).fn.prototype._initialize.apply($recv(self), []));
+$globals.HLMethodClassifier.superclass.fn.prototype._initialize.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -992,9 +1003,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLMethodGenerator.superclass||$boot.dnu).fn.prototype._initialize.apply($recv(self), []));
+$globals.HLMethodGenerator.superclass.fn.prototype._initialize.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -1019,7 +1030,9 @@ selector: "output",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@output"];
+var $1;
+$1=self["@output"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -1072,7 +1085,7 @@ function $OrderedCollection(){return $globals.OrderedCollection||(typeof Ordered
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
+var $1,$2;
 sources=$recv($OrderedCollection())._new();
 $recv($recv($recv($recv(self["@output"])._targetClass())._instanceVariableNames())._sorted())._do_((function(each){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -1083,7 +1096,8 @@ $recv($1)._add_(self._getterFor_(each));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["add:"]=1;
 //>>excludeEnd("ctx");
-return $recv($1)._add_(self._setterFor_(each));
+$2=$recv($1)._add_(self._setterFor_(each));
+return $2;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx2) {$ctx2.fillBlock({each:each},$ctx1,1)});
 //>>excludeEnd("ctx");
@@ -1112,18 +1126,18 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
+var $1,$2;
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLAccessorsGenerator.superclass||$boot.dnu).fn.prototype._generate.apply($recv(self), []));
+$globals.HLAccessorsGenerator.superclass.fn.prototype._generate.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
 $1=$recv(self["@output"])._targetClass();
 $recv($1)._accessorsSourceCodesWith_(self);
-$recv($1)._accessorProtocolWith_(self);
+$2=$recv($1)._accessorProtocolWith_(self);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"generate",{},$globals.HLAccessorsGenerator)});
@@ -1149,10 +1163,10 @@ function $String(){return $globals.String||(typeof String=="undefined"?nil:Strin
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv($HLMethodSourceCode())._new();
-$recv($1)._selector_(anInstanceVariable);
-return $recv($1)._sourceCode_($recv($String())._streamContents_((function(stream){
+var $2,$3,$1;
+$2=$recv($HLMethodSourceCode())._new();
+$recv($2)._selector_(anInstanceVariable);
+$3=$recv($2)._sourceCode_($recv($String())._streamContents_((function(stream){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
 //>>excludeEnd("ctx");
@@ -1169,6 +1183,8 @@ $ctx2.sendIdx["<<"]=2;
 }, function($ctx2) {$ctx2.fillBlock({stream:stream},$ctx1,1)});
 //>>excludeEnd("ctx");
 })));
+$1=$3;
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"getterFor:",{anInstanceVariable:anInstanceVariable},$globals.HLAccessorsGenerator)});
 //>>excludeEnd("ctx");
@@ -1193,18 +1209,18 @@ function $String(){return $globals.String||(typeof String=="undefined"?nil:Strin
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
-$1=$recv($HLMethodSourceCode())._new();
-$recv($1)._selector_($recv(anInstanceVariable).__comma(":"));
-return $recv($1)._sourceCode_($recv($String())._streamContents_((function(stream){
+var $2,$4,$3,$1;
+$2=$recv($HLMethodSourceCode())._new();
+$recv($2)._selector_($recv(anInstanceVariable).__comma(":"));
+$3=$recv($2)._sourceCode_($recv($String())._streamContents_((function(stream){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
 //>>excludeEnd("ctx");
-$2=$recv(stream).__lt_lt(anInstanceVariable);
+$4=$recv(stream).__lt_lt(anInstanceVariable);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["<<"]=2;
 //>>excludeEnd("ctx");
-$recv($2).__lt_lt(": anObject");
+$recv($4).__lt_lt(": anObject");
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["<<"]=1;
 //>>excludeEnd("ctx");
@@ -1217,6 +1233,8 @@ $ctx2.sendIdx["<<"]=3;
 }, function($ctx2) {$ctx2.fillBlock({stream:stream},$ctx1,1)});
 //>>excludeEnd("ctx");
 })));
+$1=$3;
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"setterFor:",{anInstanceVariable:anInstanceVariable},$globals.HLAccessorsGenerator)});
 //>>excludeEnd("ctx");
@@ -1245,18 +1263,18 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
+var $1,$2;
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLInitializeGenerator.superclass||$boot.dnu).fn.prototype._generate.apply($recv(self), []));
+$globals.HLInitializeGenerator.superclass.fn.prototype._generate.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
 $1=$recv(self["@output"])._targetClass();
 $recv($1)._initializeSourceCodesWith_(self);
-$recv($1)._initializeProtocolWith_(self);
+$2=$recv($1)._initializeProtocolWith_(self);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"generate",{},$globals.HLInitializeGenerator)});
@@ -1281,8 +1299,8 @@ function $String(){return $globals.String||(typeof String=="undefined"?nil:Strin
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$3,$4,$5,$6,$7;
-return $recv($String())._streamContents_((function(str){
+var $3,$2,$4,$5,$6,$7,$8,$1;
+$1=$recv($String())._streamContents_((function(str){
 var instVars,size;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
@@ -1295,28 +1313,28 @@ $recv(str).__lt_lt("initialize");
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["<<"]=1;
 //>>excludeEnd("ctx");
-$2=$recv(str)._cr();
+$3=$recv(str)._cr();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["cr"]=1;
 //>>excludeEnd("ctx");
-$1=$recv($2)._tab();
+$2=$recv($3)._tab();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["tab"]=1;
 //>>excludeEnd("ctx");
-$recv($1).__lt_lt("super initialize.");
+$recv($2).__lt_lt("super initialize.");
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["<<"]=2;
 //>>excludeEnd("ctx");
-$3=$recv($1)._cr();
+$4=$recv($2)._cr();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["cr"]=2;
 //>>excludeEnd("ctx");
-$3;
-$4=$recv(str)._cr();
+$4;
+$5=$recv(str)._cr();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["cr"]=3;
 //>>excludeEnd("ctx");
-$recv($4)._tab();
+$recv($5)._tab();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["tab"]=2;
 //>>excludeEnd("ctx");
@@ -1324,23 +1342,23 @@ return $recv(instVars)._withIndexDo_((function(name,index){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx3) {
 //>>excludeEnd("ctx");
-$5=$recv(index).__tild_eq((1));
+$6=$recv(index).__tild_eq((1));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx3.sendIdx["~="]=1;
 //>>excludeEnd("ctx");
-if($core.assert($5)){
+if($core.assert($6)){
 $recv($recv(str)._cr())._tab();
 };
-$6=$recv(str).__lt_lt(name);
+$7=$recv(str).__lt_lt(name);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx3.sendIdx["<<"]=4;
 //>>excludeEnd("ctx");
-$recv($6).__lt_lt(" := nil");
+$recv($7).__lt_lt(" := nil");
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx3.sendIdx["<<"]=3;
 //>>excludeEnd("ctx");
-$7=$recv(index).__tild_eq(size);
-if($core.assert($7)){
+$8=$recv(index).__tild_eq(size);
+if($core.assert($8)){
 return $recv(str).__lt_lt(".");
 };
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -1351,6 +1369,7 @@ return $recv(str).__lt_lt(".");
 }, function($ctx2) {$ctx2.fillBlock({str:str,instVars:instVars,size:size},$ctx1,1)});
 //>>excludeEnd("ctx");
 }));
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"generateInitializeCodeForObject",{},$globals.HLInitializeGenerator)});
 //>>excludeEnd("ctx");
@@ -1398,11 +1417,13 @@ function $HLMethodSourceCode(){return $globals.HLMethodSourceCode||(typeof HLMet
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv($HLMethodSourceCode())._new();
-$recv($1)._selector_("initialize");
-$recv($1)._sourceCode_(self._generateInitializeCodeForObject());
-return $recv($1)._yourself();
+var $2,$3,$1;
+$2=$recv($HLMethodSourceCode())._new();
+$recv($2)._selector_("initialize");
+$recv($2)._sourceCode_(self._generateInitializeCodeForObject());
+$3=$recv($2)._yourself();
+$1=$3;
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"initializeMethodForObject",{},$globals.HLInitializeGenerator)});
 //>>excludeEnd("ctx");
@@ -1452,7 +1473,9 @@ selector: "selector",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@selector"];
+var $1;
+$1=self["@selector"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -1489,7 +1512,9 @@ selector: "sourceCode",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@sourceCode"];
+var $1;
+$1=self["@sourceCode"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -1579,7 +1604,9 @@ selector: "model",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@model"];
+var $1;
+$1=self["@model"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -1619,7 +1646,9 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-return $recv(self._model())._packageToCommit();
+var $1;
+$1=$recv(self._model())._packageToCommit();
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"package",{},$globals.HLPackageCommitErrorHelper)});
 //>>excludeEnd("ctx");
@@ -1643,13 +1672,14 @@ function $HLConfirmationWidget(){return $globals.HLConfirmationWidget||(typeof H
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
+var $1,$2,$3,$4;
 $1=$recv($HLConfirmationWidget())._new();
-$2=$recv("Commit failed for namespace \x22".__comma($recv($recv(self._package())._transport())._namespace())).__comma("\x22. Do you want to commit to another path?");
+$2=$1;
+$3=$recv("Commit failed for namespace \x22".__comma($recv($recv(self._package())._transport())._namespace())).__comma("\x22. Do you want to commit to another path?");
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx[","]=1;
 //>>excludeEnd("ctx");
-$recv($1)._confirmationString_($2);
+$recv($2)._confirmationString_($3);
 $recv($1)._actionBlock_((function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
@@ -1661,7 +1691,7 @@ return self._showNewCommitPath();
 }));
 $recv($1)._cancelButtonLabel_("Abandon");
 $recv($1)._confirmButtonLabel_("Set path");
-$recv($1)._show();
+$4=$recv($1)._show();
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"showHelp",{},$globals.HLPackageCommitErrorHelper)});
@@ -1686,7 +1716,7 @@ function $HLRequestWidget(){return $globals.HLRequestWidget||(typeof HLRequestWi
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
+var $1,$2;
 $1=$recv($HLRequestWidget())._new();
 $recv($1)._beSingleline();
 $recv($1)._confirmationString_("Set commit path");
@@ -1701,7 +1731,7 @@ return self._commitToPath_(url);
 }));
 $recv($1)._confirmButtonLabel_("Commit with new path");
 $recv($1)._value_("/src");
-$recv($1)._show();
+$2=$recv($1)._show();
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"showNewCommitPath",{},$globals.HLPackageCommitErrorHelper)});
@@ -1726,10 +1756,12 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=self._new();
-$recv($1)._model_(aToolModel);
-return $recv($1)._yourself();
+var $2,$3,$1;
+$2=self._new();
+$recv($2)._model_(aToolModel);
+$3=$recv($2)._yourself();
+$1=$3;
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"on:",{aToolModel:aToolModel},$globals.HLPackageCommitErrorHelper.klass)});
 //>>excludeEnd("ctx");

@@ -14,10 +14,10 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
+var $1,$2;
 $1=$recv(html)._div();
 $recv($1)._class_("tool_container");
-$recv($1)._with_(self._splitter());
+$2=$recv($1)._with_(self._splitter());
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"renderOn:",{html:html},$globals.HLContainer)});
@@ -38,7 +38,9 @@ selector: "splitter",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@splitter"];
+var $1;
+$1=self["@splitter"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -79,10 +81,12 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=self._new();
-$recv($1)._splitter_(aSplitter);
-return $recv($1)._yourself();
+var $2,$3,$1;
+$2=self._new();
+$recv($2)._splitter_(aSplitter);
+$3=$recv($2)._yourself();
+$1=$3;
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"with:",{aSplitter:aSplitter},$globals.HLContainer.klass)});
 //>>excludeEnd("ctx");
@@ -122,7 +126,9 @@ selector: "firstWidget",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@firstWidget"];
+var $1;
+$1=self["@firstWidget"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -198,7 +204,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$3,$4,$5,$6,$2;
+var $1,$3,$4,$5,$6,$7,$2;
 $1=$recv(html)._div();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["div"]=1;
@@ -236,7 +242,8 @@ $ctx2.sendIdx["class:"]=3;
 self["@splitter"];
 $6=$recv(html)._div();
 $recv($6)._class_("pane");
-self["@secondPane"]=$recv($6)._with_(self._secondWidget());
+$7=$recv($6)._with_(self._secondWidget());
+self["@secondPane"]=$7;
 return self["@secondPane"];
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx2) {$ctx2.fillBlock({},$ctx1,1)});
@@ -284,7 +291,9 @@ selector: "secondWidget",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@secondWidget"];
+var $1;
+$1=self["@secondWidget"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -343,11 +352,13 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=self._new();
-$recv($1)._firstWidget_(aWidget);
-$recv($1)._secondWidget_(anotherWidget);
-return $recv($1)._yourself();
+var $2,$3,$1;
+$2=self._new();
+$recv($2)._firstWidget_(aWidget);
+$recv($2)._secondWidget_(anotherWidget);
+$3=$recv($2)._yourself();
+$1=$3;
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"with:with:",{aWidget:aWidget,anotherWidget:anotherWidget},$globals.HLSplitter.klass)});
 //>>excludeEnd("ctx");
@@ -372,16 +383,17 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=(
+var $2,$1;
+$2=(
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLHorizontalSplitter.superclass||$boot.dnu).fn.prototype._cssClass.apply($recv(self), []));
+$globals.HLHorizontalSplitter.superclass.fn.prototype._cssClass.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
-return $recv($1).__comma(" horizontal");
+$1=$recv($2).__comma(" horizontal");
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"cssClass",{},$globals.HLHorizontalSplitter)});
 //>>excludeEnd("ctx");
@@ -404,16 +416,17 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=(
+var $2,$1;
+$2=(
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLHorizontalSplitter.superclass||$boot.dnu).fn.prototype._panesCssClass.apply($recv(self), []));
+$globals.HLHorizontalSplitter.superclass.fn.prototype._panesCssClass.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
-return $recv($1).__comma(" horizontal");
+$1=$recv($2).__comma(" horizontal");
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"panesCssClass",{},$globals.HLHorizontalSplitter)});
 //>>excludeEnd("ctx");
@@ -618,16 +631,17 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=(
+var $2,$1;
+$2=(
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLVerticalSplitter.superclass||$boot.dnu).fn.prototype._cssClass.apply($recv(self), []));
+$globals.HLVerticalSplitter.superclass.fn.prototype._cssClass.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
-return $recv($1).__comma(" vertical");
+$1=$recv($2).__comma(" vertical");
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"cssClass",{},$globals.HLVerticalSplitter)});
 //>>excludeEnd("ctx");
@@ -650,16 +664,17 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=(
+var $2,$1;
+$2=(
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLVerticalSplitter.superclass||$boot.dnu).fn.prototype._panesCssClass.apply($recv(self), []));
+$globals.HLVerticalSplitter.superclass.fn.prototype._panesCssClass.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
-return $recv($1).__comma(" vertical");
+$1=$recv($2).__comma(" vertical");
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"panesCssClass",{},$globals.HLVerticalSplitter)});
 //>>excludeEnd("ctx");

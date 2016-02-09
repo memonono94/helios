@@ -2337,7 +2337,7 @@ renderTab: aTab on: html
 			with: [
 				((html tag: 'i') class: 'close')
 					onClick: [ self removeTab: aTab ].
-				html span 
+				html h1
 					class: aTab cssClass;
 					title: aTab label;
 					with: aTab label ];

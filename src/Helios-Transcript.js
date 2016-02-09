@@ -43,9 +43,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLTranscript.superclass||$boot.dnu).fn.prototype._initialize.apply($recv(self), []));
+$globals.HLTranscript.superclass.fn.prototype._initialize.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -98,10 +98,10 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
+var $1,$2;
 $1=$recv(html)._div();
 $recv($1)._class_("transcript");
-$recv($1)._with_((function(){
+$2=$recv($1)._with_((function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
 //>>excludeEnd("ctx");
@@ -167,9 +167,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true,
+$ctx1.supercall = true, 
 //>>excludeEnd("ctx");
-($globals.HLTranscript.superclass||$boot.dnu).fn.prototype._unregister.apply($recv(self), []));
+$globals.HLTranscript.superclass.fn.prototype._unregister.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -326,14 +326,15 @@ function $OrderedCollection(){return $globals.OrderedCollection||(typeof Ordered
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$receiver;
-$1=self["@transcripts"];
-if(($receiver = $1) == null || $receiver.isNil){
+var $2,$1,$receiver;
+$2=self["@transcripts"];
+if(($receiver = $2) == null || $receiver.isNil){
 self["@transcripts"]=$recv($OrderedCollection())._new();
-return self["@transcripts"];
+$1=self["@transcripts"];
 } else {
-return $1;
+$1=$2;
 };
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"transcripts",{},$globals.HLTranscriptHandler.klass)});
 //>>excludeEnd("ctx");

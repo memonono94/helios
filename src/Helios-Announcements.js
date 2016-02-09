@@ -14,7 +14,9 @@ selector: "actionBlock",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@actionBlock"];
+var $1;
+$1=self["@actionBlock"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -81,7 +83,9 @@ selector: "code",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@code"];
+var $1;
+$1=self["@code"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -122,10 +126,12 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=self._new();
-$recv($1)._code_(aCodeModel);
-return $recv($1)._yourself();
+var $2,$3,$1;
+$2=self._new();
+$recv($2)._code_(aCodeModel);
+$3=$recv($2)._yourself();
+$1=$3;
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"on:",{aCodeModel:aCodeModel},$globals.HLCodeHandled.klass)});
 //>>excludeEnd("ctx");
@@ -156,7 +162,9 @@ selector: "context",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@context"];
+var $1;
+$1=self["@context"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -199,7 +207,9 @@ selector: "context",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@context"];
+var $1;
+$1=self["@context"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -254,7 +264,9 @@ selector: "error",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@error"];
+var $1;
+$1=self["@error"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -297,7 +309,9 @@ selector: "column",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@column"];
+var $1;
+$1=self["@column"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -334,7 +348,9 @@ selector: "line",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@line"];
+var $1;
+$1=self["@line"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -371,7 +387,9 @@ selector: "message",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@message"];
+var $1;
+$1=self["@message"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -435,7 +453,9 @@ selector: "theClass",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@theClass"];
+var $1;
+$1=self["@theClass"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -472,7 +492,9 @@ selector: "variableName",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@variableName"];
+var $1;
+$1=self["@variableName"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -512,7 +534,9 @@ selector: "item",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@item"];
+var $1;
+$1=self["@item"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -553,10 +577,12 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=self._new();
-$recv($1)._item_(anItem);
-return $recv($1)._yourself();
+var $2,$3,$1;
+$2=self._new();
+$recv($2)._item_(anItem);
+$3=$recv($2)._yourself();
+$1=$3;
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"on:",{anItem:anItem},$globals.HLItemSelected.klass)});
 //>>excludeEnd("ctx");
@@ -593,7 +619,9 @@ selector: "item",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@item"];
+var $1;
+$1=self["@item"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -634,10 +662,12 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=self._new();
-$recv($1)._item_(anItem);
-return $recv($1)._yourself();
+var $2,$3,$1;
+$2=self._new();
+$recv($2)._item_(anItem);
+$3=$recv($2)._yourself();
+$1=$3;
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"on:",{anItem:anItem},$globals.HLItemUnselected.klass)});
 //>>excludeEnd("ctx");
@@ -665,7 +695,9 @@ selector: "testSuiteRunner",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@testSuiteRunner"];
+var $1;
+$1=self["@testSuiteRunner"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -706,10 +738,12 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=self._new();
-$recv($1)._testSuiteRunner_(aTestSuiteRunner);
-return $recv($1)._yourself();
+var $2,$3,$1;
+$2=self._new();
+$recv($2)._testSuiteRunner_(aTestSuiteRunner);
+$3=$recv($2)._yourself();
+$1=$3;
+return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"on:",{aTestSuiteRunner:aTestSuiteRunner},$globals.HLRunTests.klass)});
 //>>excludeEnd("ctx");
@@ -734,7 +768,9 @@ selector: "searchString",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@searchString"];
+var $1;
+$1=self["@searchString"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -780,7 +816,9 @@ selector: "template",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@template"];
+var $1;
+$1=self["@template"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -823,7 +861,9 @@ selector: "label",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@label"];
+var $1;
+$1=self["@label"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -860,7 +900,9 @@ selector: "widget",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return self["@widget"];
+var $1;
+$1=self["@widget"];
+return $1;
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
