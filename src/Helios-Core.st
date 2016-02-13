@@ -1056,7 +1056,7 @@ renderContentOn: html
 !
 
 renderHeadOn: html
-	html div 
+	html h2
 		class: 'list-label';
 		with: [
 			html with: self label.

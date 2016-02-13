@@ -552,7 +552,9 @@ body[id="helios"] .tool_container .pane .nav-pills i.uncommented {
   background-image: url('uncommented.png');
 }
 body[id="helios"] .tool_container .list-label {
-  font-size: 11px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
   border-radius: 0;
   border-bottom: 1px solid #999;
   border-top: 1px solid #eee;
@@ -563,7 +565,6 @@ body[id="helios"] .tool_container .list-label {
   background-image: linear-gradient(top, #eee, #ddd);
   color: #444;
   font-weight: bold;
-  text-shadow: 0 0 0;
   padding-left: 4px;
   line-height: 14px;
   height: 15px;

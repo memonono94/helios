@@ -4572,7 +4572,7 @@ var self=this;
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 var $1,$2;
-$1=$recv(html)._div();
+$1=$recv(html)._h2();
 $recv($1)._class_("list-label");
 $2=$recv($1)._with_((function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -4594,10 +4594,10 @@ return self;
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
 args: ["html"],
-source: "renderHeadOn: html\x0a\x09html div \x0a\x09\x09class: 'list-label';\x0a\x09\x09with: [\x0a\x09\x09\x09html with: self label.\x0a\x09\x09\x09self renderMenuOn: html ]",
+source: "renderHeadOn: html\x0a\x09html h2\x0a\x09\x09class: 'list-label';\x0a\x09\x09with: [\x0a\x09\x09\x09html with: self label.\x0a\x09\x09\x09self renderMenuOn: html ]",
 referencedClasses: [],
 //>>excludeEnd("ide");
-messageSends: ["class:", "div", "with:", "label", "renderMenuOn:"]
+messageSends: ["class:", "h2", "with:", "label", "renderMenuOn:"]
 }),
 $globals.HLToolListWidget);
 
