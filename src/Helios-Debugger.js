@@ -20,9 +20,7 @@ selector: "context",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-var $1;
-$1=self["@context"];
-return $1;
+return self["@context"];
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -43,9 +41,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._context())._evaluate_on_(aString,anEvaluator);
-return $1;
+return $recv(self._context())._evaluate_on_(aString,anEvaluator);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"evaluate:on:",{aString:aString,anEvaluator:anEvaluator},$globals.HLContextInspectorDecorator)});
 //>>excludeEnd("ctx");
@@ -85,12 +81,11 @@ protocol: 'inspecting',
 fn: function (anInspector){
 var self=this;
 var variables,inspectedContext;
-function $Dictionary(){return $globals.Dictionary||(typeof Dictionary=="undefined"?nil:Dictionary)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2,$3,$4,$receiver;
-variables=$recv($Dictionary())._new();
+var $1,$2,$3,$receiver;
+variables=$recv($globals.Dictionary)._new();
 inspectedContext=self._context();
 $1=variables;
 $2=$recv(inspectedContext)._locals();
@@ -134,7 +129,7 @@ return $recv(variables)._addAll_($recv(inspectedContext)._locals());
 //>>excludeEnd("ctx");
 }));
 $recv(anInspector)._setLabel_("Context");
-$4=$recv(anInspector)._setVariables_(variables);
+$recv(anInspector)._setVariables_(variables);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"inspectOn:",{anInspector:anInspector,variables:variables,inspectedContext:inspectedContext},$globals.HLContextInspectorDecorator)});
@@ -159,12 +154,10 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$3,$1;
-$2=self._new();
-$recv($2)._initializeFromContext_(aContext);
-$3=$recv($2)._yourself();
-$1=$3;
-return $1;
+var $1;
+$1=self._new();
+$recv($1)._initializeFromContext_(aContext);
+return $recv($1)._yourself();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"on:",{aContext:aContext},$globals.HLContextInspectorDecorator.klass)});
 //>>excludeEnd("ctx");
@@ -189,40 +182,34 @@ selector: "codeWidget",
 protocol: 'widgets',
 fn: function (){
 var self=this;
-function $HLDebuggerCodeWidget(){return $globals.HLDebuggerCodeWidget||(typeof HLDebuggerCodeWidget=="undefined"?nil:HLDebuggerCodeWidget)}
-function $HLDebuggerCodeModel(){return $globals.HLDebuggerCodeModel||(typeof HLDebuggerCodeModel=="undefined"?nil:HLDebuggerCodeModel)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$3,$4,$6,$7,$8,$9,$5,$10,$1,$receiver;
-$2=self["@codeWidget"];
-if(($receiver = $2) == null || $receiver.isNil){
-$3=$recv($HLDebuggerCodeWidget())._new();
+var $1,$2,$4,$5,$6,$3,$receiver;
+$1=self["@codeWidget"];
+if(($receiver = $1) == null || $receiver.isNil){
+$2=$recv($globals.HLDebuggerCodeWidget)._new();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["new"]=1;
 //>>excludeEnd("ctx");
-$4=$3;
-$6=$recv($HLDebuggerCodeModel())._new();
-$7=$6;
-$8=self._model();
+$4=$recv($globals.HLDebuggerCodeModel)._new();
+$5=self._model();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["model"]=1;
 //>>excludeEnd("ctx");
-$recv($7)._debuggerModel_($8);
-$9=$recv($6)._yourself();
+$recv($4)._debuggerModel_($5);
+$6=$recv($4)._yourself();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["yourself"]=1;
 //>>excludeEnd("ctx");
-$5=$9;
-$recv($4)._model_($5);
-$recv($3)._browserModel_(self._model());
-$10=$recv($3)._yourself();
-self["@codeWidget"]=$10;
-$1=self["@codeWidget"];
+$3=$6;
+$recv($2)._model_($3);
+$recv($2)._browserModel_(self._model());
+self["@codeWidget"]=$recv($2)._yourself();
+return self["@codeWidget"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"codeWidget",{},$globals.HLDebugger)});
 //>>excludeEnd("ctx");
@@ -245,17 +232,16 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1;
-$2=(
+var $1;
+$1=(
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLDebugger.superclass.fn.prototype._cssClass.apply($recv(self), []));
+($globals.HLDebugger.superclass||$boot.dnu).fn.prototype._cssClass.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
-$1=$recv($2).__comma(" hl_debugger");
-return $1;
+return $recv($1).__comma(" hl_debugger");
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"cssClass",{},$globals.HLDebugger)});
 //>>excludeEnd("ctx");
@@ -299,11 +285,10 @@ selector: "initializeFromError:",
 protocol: 'initialization',
 fn: function (anError){
 var self=this;
-function $HLDebuggerModel(){return $globals.HLDebuggerModel||(typeof HLDebuggerModel=="undefined"?nil:HLDebuggerModel)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-self["@model"]=$recv($HLDebuggerModel())._on_(anError);
+self["@model"]=$recv($globals.HLDebuggerModel)._on_(anError);
 self._observeModel();
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -325,19 +310,17 @@ selector: "inspectorWidget",
 protocol: 'widgets',
 fn: function (){
 var self=this;
-function $HLInspectorWidget(){return $globals.HLInspectorWidget||(typeof HLInspectorWidget=="undefined"?nil:HLInspectorWidget)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@inspectorWidget"];
-if(($receiver = $2) == null || $receiver.isNil){
-self["@inspectorWidget"]=$recv($HLInspectorWidget())._new();
+var $1,$receiver;
 $1=self["@inspectorWidget"];
+if(($receiver = $1) == null || $receiver.isNil){
+self["@inspectorWidget"]=$recv($globals.HLInspectorWidget)._new();
+return self["@inspectorWidget"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"inspectorWidget",{},$globals.HLDebugger)});
 //>>excludeEnd("ctx");
@@ -357,19 +340,17 @@ selector: "model",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-function $HLDebuggerModel(){return $globals.HLDebuggerModel||(typeof HLDebuggerModel=="undefined"?nil:HLDebuggerModel)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@model"];
-if(($receiver = $2) == null || $receiver.isNil){
-self["@model"]=$recv($HLDebuggerModel())._new();
+var $1,$receiver;
 $1=self["@model"];
+if(($receiver = $1) == null || $receiver.isNil){
+self["@model"]=$recv($globals.HLDebuggerModel)._new();
+return self["@model"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"model",{},$globals.HLDebugger)});
 //>>excludeEnd("ctx");
@@ -389,23 +370,20 @@ selector: "observeModel",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLDebuggerContextSelected(){return $globals.HLDebuggerContextSelected||(typeof HLDebuggerContextSelected=="undefined"?nil:HLDebuggerContextSelected)}
-function $HLDebuggerStepped(){return $globals.HLDebuggerStepped||(typeof HLDebuggerStepped=="undefined"?nil:HLDebuggerStepped)}
-function $HLDebuggerProceeded(){return $globals.HLDebuggerProceeded||(typeof HLDebuggerProceeded=="undefined"?nil:HLDebuggerProceeded)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
+var $1;
 $1=$recv(self._model())._announcer();
-$recv($1)._on_send_to_($HLDebuggerContextSelected(),"onContextSelected:",self);
+$recv($1)._on_send_to_($globals.HLDebuggerContextSelected,"onContextSelected:",self);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["on:send:to:"]=1;
 //>>excludeEnd("ctx");
-$recv($1)._on_send_to_($HLDebuggerStepped(),"onDebuggerStepped:",self);
+$recv($1)._on_send_to_($globals.HLDebuggerStepped,"onDebuggerStepped:",self);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["on:send:to:"]=2;
 //>>excludeEnd("ctx");
-$2=$recv($1)._on_send_to_($HLDebuggerProceeded(),"onDebuggerProceeded",self);
+$recv($1)._on_send_to_($globals.HLDebuggerProceeded,"onDebuggerProceeded",self);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"observeModel",{},$globals.HLDebugger)});
@@ -426,11 +404,10 @@ selector: "onContextSelected:",
 protocol: 'reactions',
 fn: function (anAnnouncement){
 var self=this;
-function $HLContextInspectorDecorator(){return $globals.HLContextInspectorDecorator||(typeof HLContextInspectorDecorator=="undefined"?nil:HLContextInspectorDecorator)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-$recv(self._inspectorWidget())._inspect_($recv($HLContextInspectorDecorator())._on_($recv(anAnnouncement)._context()));
+$recv(self._inspectorWidget())._inspect_($recv($globals.HLContextInspectorDecorator)._on_($recv(anAnnouncement)._context()));
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"onContextSelected:",{anAnnouncement:anAnnouncement},$globals.HLDebugger)});
@@ -475,7 +452,6 @@ selector: "onDebuggerStepped:",
 protocol: 'reactions',
 fn: function (anAnnouncement){
 var self=this;
-function $HLContextInspectorDecorator(){return $globals.HLContextInspectorDecorator||(typeof HLContextInspectorDecorator=="undefined"?nil:HLContextInspectorDecorator)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
@@ -484,7 +460,7 @@ $1=$recv(self._model())._atEnd();
 if($core.assert($1)){
 self._removeTab();
 };
-$recv(self._inspectorWidget())._inspect_($recv($HLContextInspectorDecorator())._on_($recv(anAnnouncement)._context()));
+$recv(self._inspectorWidget())._inspect_($recv($globals.HLContextInspectorDecorator)._on_($recv(anAnnouncement)._context()));
 $recv(self._stackListWidget())._refresh();
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -506,11 +482,10 @@ selector: "registerBindingsOn:",
 protocol: 'keybindings',
 fn: function (aBindingGroup){
 var self=this;
-function $HLToolCommand(){return $globals.HLToolCommand||(typeof HLToolCommand=="undefined"?nil:HLToolCommand)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-$recv($HLToolCommand())._registerConcreteClassesOn_for_(aBindingGroup,self._model());
+$recv($globals.HLToolCommand)._registerConcreteClassesOn_for_(aBindingGroup,self._model());
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"registerBindingsOn:",{aBindingGroup:aBindingGroup},$globals.HLDebugger)});
@@ -531,19 +506,16 @@ selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
 var self=this;
-function $HLContainer(){return $globals.HLContainer||(typeof HLContainer=="undefined"?nil:HLContainer)}
-function $HLVerticalSplitter(){return $globals.HLVerticalSplitter||(typeof HLVerticalSplitter=="undefined"?nil:HLVerticalSplitter)}
-function $HLHorizontalSplitter(){return $globals.HLHorizontalSplitter||(typeof HLHorizontalSplitter=="undefined"?nil:HLHorizontalSplitter)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 var $2,$1;
 self._renderHeadOn_(html);
-$2=$recv($HLVerticalSplitter())._with_with_(self._codeWidget(),$recv($HLHorizontalSplitter())._with_with_(self._stackListWidget(),self._inspectorWidget()));
+$2=$recv($globals.HLVerticalSplitter)._with_with_(self._codeWidget(),$recv($globals.HLHorizontalSplitter)._with_with_(self._stackListWidget(),self._inspectorWidget()));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["with:with:"]=1;
 //>>excludeEnd("ctx");
-$1=$recv($HLContainer())._with_($2);
+$1=$recv($globals.HLContainer)._with_($2);
 $recv(html)._with_($1);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["with:"]=1;
@@ -606,22 +578,19 @@ selector: "stackListWidget",
 protocol: 'widgets',
 fn: function (){
 var self=this;
-function $HLStackListWidget(){return $globals.HLStackListWidget||(typeof HLStackListWidget=="undefined"?nil:HLStackListWidget)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$3,$4,$1,$receiver;
-$2=self["@stackListWidget"];
-if(($receiver = $2) == null || $receiver.isNil){
-$3=$recv($HLStackListWidget())._on_(self._model());
-$recv($3)._next_(self._codeWidget());
-$4=$recv($3)._yourself();
-self["@stackListWidget"]=$4;
+var $1,$2,$receiver;
 $1=self["@stackListWidget"];
+if(($receiver = $1) == null || $receiver.isNil){
+$2=$recv($globals.HLStackListWidget)._on_(self._model());
+$recv($2)._next_(self._codeWidget());
+self["@stackListWidget"]=$recv($2)._yourself();
+return self["@stackListWidget"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"stackListWidget",{},$globals.HLDebugger)});
 //>>excludeEnd("ctx");
@@ -646,9 +615,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLDebugger.superclass.fn.prototype._unregister.apply($recv(self), []));
+($globals.HLDebugger.superclass||$boot.dnu).fn.prototype._unregister.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -680,12 +649,10 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$3,$1;
-$2=self._new();
-$recv($2)._initializeFromError_(anError);
-$3=$recv($2)._yourself();
-$1=$3;
-return $1;
+var $1;
+$1=self._new();
+$recv($1)._initializeFromError_(anError);
+return $recv($1)._yourself();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"on:",{anError:anError},$globals.HLDebugger.klass)});
 //>>excludeEnd("ctx");
@@ -743,9 +710,7 @@ selector: "debuggerModel",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-var $1;
-$1=self["@debuggerModel"];
-return $1;
+return self["@debuggerModel"];
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -782,12 +747,10 @@ selector: "doIt:",
 protocol: 'actions',
 fn: function (aString){
 var self=this;
-function $ErrorHandler(){return $globals.ErrorHandler||(typeof ErrorHandler=="undefined"?nil:ErrorHandler)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv((function(){
+return $recv((function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
 //>>excludeEnd("ctx");
@@ -799,13 +762,12 @@ return $recv(self._debuggerModel())._evaluate_(aString);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
 //>>excludeEnd("ctx");
-$recv($ErrorHandler())._handleError_(e);
+$recv($globals.ErrorHandler)._handleError_(e);
 return nil;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx2) {$ctx2.fillBlock({e:e},$ctx1,2)});
 //>>excludeEnd("ctx");
 }));
-return $1;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"doIt:",{aString:aString},$globals.HLDebuggerCodeModel)});
 //>>excludeEnd("ctx");
@@ -882,9 +844,9 @@ return $core.withContext(function($ctx1) {
 self._clearHighlight();
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLDebuggerCodeWidget.superclass.fn.prototype._contents_.apply($recv(self), [aString]));
+($globals.HLDebuggerCodeWidget.superclass||$boot.dnu).fn.prototype._contents_.apply($recv(self), [aString]));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -911,19 +873,17 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$3,$1;
-$2=(
+var $1;
+$1=(
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLDebuggerCodeWidget.superclass.fn.prototype._editorOptions.apply($recv(self), []));
+($globals.HLDebuggerCodeWidget.superclass||$boot.dnu).fn.prototype._editorOptions.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
-$recv($2)._at_put_("gutters",["CodeMirror-linenumbers", "stops"]);
-$3=$recv($2)._yourself();
-$1=$3;
-return $1;
+$recv($1)._at_put_("gutters",["CodeMirror-linenumbers", "stops"]);
+return $recv($1)._yourself();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"editorOptions",{},$globals.HLDebuggerCodeWidget)});
 //>>excludeEnd("ctx");
@@ -979,55 +939,54 @@ var token;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $4,$3,$2,$1,$5,$9,$8,$7,$11,$10,$6,$15,$14,$13,$12,$receiver;
+var $3,$2,$1,$4,$8,$7,$6,$10,$9,$5,$14,$13,$12,$11,$receiver;
 if(($receiver = aNode) == null || $receiver.isNil){
 aNode;
 } else {
 self._clearHighlight();
-$4=$recv(aNode)._positionStart();
+$3=$recv(aNode)._positionStart();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["positionStart"]=1;
 //>>excludeEnd("ctx");
-$3=$recv($4)._x();
+$2=$recv($3)._x();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["x"]=1;
 //>>excludeEnd("ctx");
-$2=$recv($3).__minus((1));
+$1=$recv($2).__minus((1));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["-"]=1;
 //>>excludeEnd("ctx");
-$1=self._addStopAt_($2);
-$1;
-$5=self._editor();
-$9=$recv(aNode)._positionStart();
+self._addStopAt_($1);
+$4=self._editor();
+$8=$recv(aNode)._positionStart();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["positionStart"]=2;
 //>>excludeEnd("ctx");
-$8=$recv($9)._x();
+$7=$recv($8)._x();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["x"]=2;
 //>>excludeEnd("ctx");
-$7=$recv($8).__minus((1));
+$6=$recv($7).__minus((1));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["-"]=2;
 //>>excludeEnd("ctx");
-$11=$recv($recv(aNode)._positionStart())._y();
+$10=$recv($recv(aNode)._positionStart())._y();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["y"]=1;
 //>>excludeEnd("ctx");
-$10=$recv($11).__minus((1));
+$9=$recv($10).__minus((1));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["-"]=3;
 //>>excludeEnd("ctx");
-$6=$globals.HashedCollection._newFromPairs_(["line",$7,"ch",$10]);
-$15=$recv(aNode)._positionEnd();
+$5=$globals.HashedCollection._newFromPairs_(["line",$6,"ch",$9]);
+$14=$recv(aNode)._positionEnd();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["positionEnd"]=1;
 //>>excludeEnd("ctx");
-$14=$recv($15)._x();
-$13=$recv($14).__minus((1));
-$12=$globals.HashedCollection._newFromPairs_(["line",$13,"ch",$recv($recv(aNode)._positionEnd())._y()]);
-$recv($5)._setSelection_to_($6,$12);
+$13=$recv($14)._x();
+$12=$recv($13).__minus((1));
+$11=$globals.HashedCollection._newFromPairs_(["line",$12,"ch",$recv($recv(aNode)._positionEnd())._y()]);
+$recv($4)._setSelection_to_($5,$11);
 };
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -1049,18 +1008,15 @@ selector: "observeBrowserModel",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLDebuggerContextSelected(){return $globals.HLDebuggerContextSelected||(typeof HLDebuggerContextSelected=="undefined"?nil:HLDebuggerContextSelected)}
-function $HLDebuggerStepped(){return $globals.HLDebuggerStepped||(typeof HLDebuggerStepped=="undefined"?nil:HLDebuggerStepped)}
-function $HLDebuggerWhere(){return $globals.HLDebuggerWhere||(typeof HLDebuggerWhere=="undefined"?nil:HLDebuggerWhere)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 var $2,$1,$4,$3;
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLDebuggerCodeWidget.superclass.fn.prototype._observeBrowserModel.apply($recv(self), []));
+($globals.HLDebuggerCodeWidget.superclass||$boot.dnu).fn.prototype._observeBrowserModel.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -1072,7 +1028,7 @@ $1=$recv($2)._announcer();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["announcer"]=1;
 //>>excludeEnd("ctx");
-$recv($1)._on_send_to_($HLDebuggerContextSelected(),"onContextSelected",self);
+$recv($1)._on_send_to_($globals.HLDebuggerContextSelected,"onContextSelected",self);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["on:send:to:"]=1;
 //>>excludeEnd("ctx");
@@ -1084,11 +1040,11 @@ $3=$recv($4)._announcer();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["announcer"]=2;
 //>>excludeEnd("ctx");
-$recv($3)._on_send_to_($HLDebuggerStepped(),"onContextSelected",self);
+$recv($3)._on_send_to_($globals.HLDebuggerStepped,"onContextSelected",self);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["on:send:to:"]=2;
 //>>excludeEnd("ctx");
-$recv($recv(self._browserModel())._announcer())._on_send_to_($HLDebuggerWhere(),"onContextSelected",self);
+$recv($recv(self._browserModel())._announcer())._on_send_to_($globals.HLDebuggerWhere,"onContextSelected",self);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"observeBrowserModel",{},$globals.HLDebuggerCodeWidget)});
@@ -1138,9 +1094,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLDebuggerCodeWidget.superclass.fn.prototype._renderOn_.apply($recv(self), [html]));
+($globals.HLDebuggerCodeWidget.superclass||$boot.dnu).fn.prototype._renderOn_.apply($recv(self), [html]));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -1174,9 +1130,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._debugger())._atEnd();
-return $1;
+return $recv(self._debugger())._atEnd();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"atEnd",{},$globals.HLDebuggerModel)});
 //>>excludeEnd("ctx");
@@ -1197,12 +1151,10 @@ protocol: 'accessing',
 fn: function (){
 var self=this;
 var contexts,context;
-function $OrderedCollection(){return $globals.OrderedCollection||(typeof OrderedCollection=="undefined"?nil:OrderedCollection)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-contexts=$recv($OrderedCollection())._new();
+contexts=$recv($globals.OrderedCollection)._new();
 context=self._rootContext();
 $recv((function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -1223,8 +1175,7 @@ return context;
 }, function($ctx2) {$ctx2.fillBlock({},$ctx1,2)});
 //>>excludeEnd("ctx");
 }));
-$1=contexts;
-return $1;
+return contexts;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"contexts",{contexts:contexts,context:context},$globals.HLDebuggerModel)});
 //>>excludeEnd("ctx");
@@ -1247,9 +1198,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._debugger())._context();
-return $1;
+return $recv(self._debugger())._context();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"currentContext",{},$globals.HLDebuggerModel)});
 //>>excludeEnd("ctx");
@@ -1269,11 +1218,10 @@ selector: "currentContext:",
 protocol: 'accessing',
 fn: function (aContext){
 var self=this;
-function $HLDebuggerContextSelected(){return $globals.HLDebuggerContextSelected||(typeof HLDebuggerContextSelected=="undefined"?nil:HLDebuggerContextSelected)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
+var $1,$3,$2;
 self._withChangesDo_((function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
@@ -1283,10 +1231,11 @@ $recv(self._debugger())._context_(aContext);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx2.sendIdx["context:"]=1;
 //>>excludeEnd("ctx");
-$1=$recv($HLDebuggerContextSelected())._new();
-$recv($1)._context_(aContext);
-$2=$recv($1)._yourself();
-return $recv(self._announcer())._announce_($2);
+$1=self._announcer();
+$3=$recv($globals.HLDebuggerContextSelected)._new();
+$recv($3)._context_(aContext);
+$2=$recv($3)._yourself();
+return $recv($1)._announce_($2);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx2) {$ctx2.fillBlock({},$ctx1,1)});
 //>>excludeEnd("ctx");
@@ -1311,19 +1260,17 @@ selector: "debugger",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-function $ASTDebugger(){return $globals.ASTDebugger||(typeof ASTDebugger=="undefined"?nil:ASTDebugger)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@debugger"];
-if(($receiver = $2) == null || $receiver.isNil){
-self["@debugger"]=$recv($ASTDebugger())._new();
+var $1,$receiver;
 $1=self["@debugger"];
+if(($receiver = $1) == null || $receiver.isNil){
+self["@debugger"]=$recv($globals.ASTDebugger)._new();
+return self["@debugger"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"debugger",{},$globals.HLDebuggerModel)});
 //>>excludeEnd("ctx");
@@ -1343,9 +1290,7 @@ selector: "error",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-var $1;
-$1=self["@error"];
-return $1;
+return self["@error"];
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -1366,9 +1311,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._environment())._evaluate_for_(aString,self._currentContext());
-return $1;
+return $recv(self._environment())._evaluate_for_(aString,self._currentContext());
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"evaluate:",{aString:aString},$globals.HLDebuggerModel)});
 //>>excludeEnd("ctx");
@@ -1420,12 +1363,11 @@ protocol: 'initialization',
 fn: function (anError){
 var self=this;
 var errorContext;
-function $AIContext(){return $globals.AIContext||(typeof AIContext=="undefined"?nil:AIContext)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 self["@error"]=anError;
-errorContext=$recv($AIContext())._fromMethodContext_($recv(self["@error"])._context());
+errorContext=$recv($globals.AIContext)._fromMethodContext_($recv(self["@error"])._context());
 self["@rootContext"]=$recv(self["@error"])._signalerContextFrom_(errorContext);
 self._selectedMethod_($recv(self["@rootContext"])._method());
 return self;
@@ -1451,9 +1393,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._debugger())._node();
-return $1;
+return $recv(self._debugger())._node();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"nextNode",{},$globals.HLDebuggerModel)});
 //>>excludeEnd("ctx");
@@ -1473,11 +1413,10 @@ selector: "onStep",
 protocol: 'reactions',
 fn: function (){
 var self=this;
-function $HLDebuggerContextSelected(){return $globals.HLDebuggerContextSelected||(typeof HLDebuggerContextSelected=="undefined"?nil:HLDebuggerContextSelected)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$3,$4;
+var $2,$1,$3,$5,$4;
 self["@rootContext"]=self._currentContext();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["currentContext"]=1;
@@ -1488,10 +1427,11 @@ $ctx1.sendIdx["currentContext"]=2;
 //>>excludeEnd("ctx");
 $1=$recv($2)._method();
 self._selectedMethod_($1);
-$3=$recv($HLDebuggerContextSelected())._new();
-$recv($3)._context_(self._currentContext());
-$4=$recv($3)._yourself();
-$recv(self._announcer())._announce_($4);
+$3=self._announcer();
+$5=$recv($globals.HLDebuggerContextSelected)._new();
+$recv($5)._context_(self._currentContext());
+$4=$recv($5)._yourself();
+$recv($3)._announce_($4);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"onStep",{},$globals.HLDebuggerModel)});
@@ -1512,12 +1452,11 @@ selector: "proceed",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLDebuggerProceeded(){return $globals.HLDebuggerProceeded||(typeof HLDebuggerProceeded=="undefined"?nil:HLDebuggerProceeded)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 $recv(self._debugger())._proceed();
-$recv(self._announcer())._announce_($recv($HLDebuggerProceeded())._new());
+$recv(self._announcer())._announce_($recv($globals.HLDebuggerProceeded)._new());
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"proceed",{},$globals.HLDebuggerModel)});
@@ -1538,17 +1477,17 @@ selector: "restart",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLDebuggerStepped(){return $globals.HLDebuggerStepped||(typeof HLDebuggerStepped=="undefined"?nil:HLDebuggerStepped)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
+var $1,$3,$2;
 $recv(self._debugger())._restart();
 self._onStep();
-$1=$recv($HLDebuggerStepped())._new();
-$recv($1)._context_(self._currentContext());
-$2=$recv($1)._yourself();
-$recv(self._announcer())._announce_($2);
+$1=self._announcer();
+$3=$recv($globals.HLDebuggerStepped)._new();
+$recv($3)._context_(self._currentContext());
+$2=$recv($3)._yourself();
+$recv($1)._announce_($2);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"restart",{},$globals.HLDebuggerModel)});
@@ -1569,9 +1508,7 @@ selector: "rootContext",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-var $1;
-$1=self["@rootContext"];
-return $1;
+return self["@rootContext"];
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -1589,17 +1526,17 @@ selector: "stepOver",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLDebuggerStepped(){return $globals.HLDebuggerStepped||(typeof HLDebuggerStepped=="undefined"?nil:HLDebuggerStepped)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
+var $1,$3,$2;
 $recv(self._debugger())._stepOver();
 self._onStep();
-$1=$recv($HLDebuggerStepped())._new();
-$recv($1)._context_(self._currentContext());
-$2=$recv($1)._yourself();
-$recv(self._announcer())._announce_($2);
+$1=self._announcer();
+$3=$recv($globals.HLDebuggerStepped)._new();
+$recv($3)._context_(self._currentContext());
+$2=$recv($3)._yourself();
+$recv($1)._announce_($2);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"stepOver",{},$globals.HLDebuggerModel)});
@@ -1620,11 +1557,10 @@ selector: "where",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLDebuggerWhere(){return $globals.HLDebuggerWhere||(typeof HLDebuggerWhere=="undefined"?nil:HLDebuggerWhere)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-$recv(self._announcer())._announce_($recv($HLDebuggerWhere())._new());
+$recv(self._announcer())._announce_($recv($globals.HLDebuggerWhere)._new());
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"where",{},$globals.HLDebuggerModel)});
@@ -1649,12 +1585,10 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$3,$1;
-$2=self._new();
-$recv($2)._initializeFromError_(anError);
-$3=$recv($2)._yourself();
-$1=$3;
-return $1;
+var $1;
+$1=self._new();
+$recv($1)._initializeFromError_(anError);
+return $recv($1)._yourself();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"on:",{anError:anError},$globals.HLDebuggerModel.klass)});
 //>>excludeEnd("ctx");
@@ -1676,12 +1610,11 @@ selector: "confirmDebugError:",
 protocol: 'error handling',
 fn: function (anError){
 var self=this;
-function $HLConfirmationWidget(){return $globals.HLConfirmationWidget||(typeof HLConfirmationWidget=="undefined"?nil:HLConfirmationWidget)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
-$1=$recv($HLConfirmationWidget())._new();
+var $1;
+$1=$recv($globals.HLConfirmationWidget)._new();
 $recv($1)._confirmationString_($recv(anError)._messageText());
 $recv($1)._actionBlock_((function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -1694,7 +1627,7 @@ return self._debugError_(anError);
 }));
 $recv($1)._cancelButtonLabel_("Abandon");
 $recv($1)._confirmButtonLabel_("Debug");
-$2=$recv($1)._show();
+$recv($1)._show();
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"confirmDebugError:",{anError:anError},$globals.HLErrorHandler)});
@@ -1715,9 +1648,6 @@ selector: "debugError:",
 protocol: 'error handling',
 fn: function (anError){
 var self=this;
-function $HLDebugger(){return $globals.HLDebugger||(typeof HLDebugger=="undefined"?nil:HLDebugger)}
-function $Error(){return $globals.Error||(typeof Error=="undefined"?nil:Error)}
-function $ConsoleErrorHandler(){return $globals.ConsoleErrorHandler||(typeof ConsoleErrorHandler=="undefined"?nil:ConsoleErrorHandler)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
@@ -1725,15 +1655,15 @@ $recv((function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
 //>>excludeEnd("ctx");
-return $recv($recv($HLDebugger())._on_(anError))._openAsTab();
+return $recv($recv($globals.HLDebugger)._on_(anError))._openAsTab();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx2) {$ctx2.fillBlock({},$ctx1,1)});
 //>>excludeEnd("ctx");
-}))._on_do_($Error(),(function(error){
+}))._on_do_($globals.Error,(function(error){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
 //>>excludeEnd("ctx");
-return $recv($recv($ConsoleErrorHandler())._new())._handleError_(error);
+return $recv($recv($globals.ConsoleErrorHandler)._new())._handleError_(error);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx2) {$ctx2.fillBlock({error:error},$ctx1,2)});
 //>>excludeEnd("ctx");
@@ -1782,14 +1712,13 @@ selector: "onErrorHandled",
 protocol: 'error handling',
 fn: function (){
 var self=this;
-function $HLProgressWidget(){return $globals.HLProgressWidget||(typeof HLProgressWidget=="undefined"?nil:HLProgressWidget)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
-$1=$recv($HLProgressWidget())._default();
+var $1;
+$1=$recv($globals.HLProgressWidget)._default();
 $recv($1)._flush();
-$2=$recv($1)._remove();
+$recv($1)._remove();
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"onErrorHandled",{},$globals.HLErrorHandler)});
@@ -1816,9 +1745,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._model())._contexts();
-return $1;
+return $recv(self._model())._contexts();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"items",{},$globals.HLStackListWidget)});
 //>>excludeEnd("ctx");
@@ -1856,19 +1783,18 @@ selector: "observeModel",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLDebuggerStepped(){return $globals.HLDebuggerStepped||(typeof HLDebuggerStepped=="undefined"?nil:HLDebuggerStepped)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLStackListWidget.superclass.fn.prototype._observeModel.apply($recv(self), []));
+($globals.HLStackListWidget.superclass||$boot.dnu).fn.prototype._observeModel.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
-$recv($recv(self._model())._announcer())._on_send_to_($HLDebuggerStepped(),"onDebuggerStepped:",self);
+$recv($recv(self._model())._announcer())._on_send_to_($globals.HLDebuggerStepped,"onDebuggerStepped:",self);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"observeModel",{},$globals.HLStackListWidget)});
@@ -1941,7 +1867,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$3,$4,$5,$6,$7,$8,$9,$10,$2;
+var $1,$3,$4,$5,$6,$7,$8,$9,$2;
 $1=$recv(html)._div();
 $recv($1)._class_("debugger_bar");
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -2029,7 +1955,7 @@ $8;
 $9=$recv(html)._button();
 $recv($9)._class_("btn btn-default proceed");
 $recv($9)._with_("Proceed");
-$10=$recv($9)._onClick_((function(){
+return $recv($9)._onClick_((function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx3) {
 //>>excludeEnd("ctx");
@@ -2038,7 +1964,6 @@ return self._proceed();
 }, function($ctx3) {$ctx3.fillBlock({},$ctx2,5)});
 //>>excludeEnd("ctx");
 }));
-return $10;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx2) {$ctx2.fillBlock({},$ctx1,1)});
 //>>excludeEnd("ctx");
@@ -2096,9 +2021,9 @@ return $core.withContext(function($ctx1) {
 $recv(self._model())._currentContext_(aContext);
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLStackListWidget.superclass.fn.prototype._selectItem_.apply($recv(self), [aContext]));
+($globals.HLStackListWidget.superclass||$boot.dnu).fn.prototype._selectItem_.apply($recv(self), [aContext]));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -2125,9 +2050,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._model())._currentContext();
-return $1;
+return $recv(self._model())._currentContext();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"selectedItem",{},$globals.HLStackListWidget)});
 //>>excludeEnd("ctx");

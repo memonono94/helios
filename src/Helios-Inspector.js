@@ -11,9 +11,7 @@ selector: "inspector",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-var $1;
-$1=self["@inspector"];
-return $1;
+return self["@inspector"];
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -53,9 +51,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._inspector())._model();
-return $1;
+return $recv(self._inspector())._model();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"model",{},$globals.HLInspectorDisplayWidget)});
 //>>excludeEnd("ctx");
@@ -103,24 +99,23 @@ var selection;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$5,$4,$3,$2;
+var $1,$4,$3,$2;
 $1=self._model();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["model"]=1;
 //>>excludeEnd("ctx");
 selection=$recv($1)._selection();
-$5=self._model();
+$4=self._model();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["model"]=2;
 //>>excludeEnd("ctx");
-$4=$recv($5)._variables();
-$3=$recv($4)._includesKey_(selection);
-if($core.assert($3)){
-$2=$recv($recv(self._model())._instVarObjectAt_(selection))._printString();
+$3=$recv($4)._variables();
+$2=$recv($3)._includesKey_(selection);
+if($core.assert($2)){
+return $recv($recv(self._model())._instVarObjectAt_(selection))._printString();
 } else {
-$2="";
+return "";
 };
-return $2;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"selectionDisplayString",{selection:selection},$globals.HLInspectorDisplayWidget)});
 //>>excludeEnd("ctx");
@@ -146,19 +141,17 @@ selector: "code",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-function $HLCodeModel(){return $globals.HLCodeModel||(typeof HLCodeModel=="undefined"?nil:HLCodeModel)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@code"];
-if(($receiver = $2) == null || $receiver.isNil){
-self["@code"]=$recv($HLCodeModel())._on_(self._environment());
+var $1,$receiver;
 $1=self["@code"];
+if(($receiver = $1) == null || $receiver.isNil){
+self["@code"]=$recv($globals.HLCodeModel)._on_(self._environment());
+return self["@code"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"code",{},$globals.HLInspectorModel)});
 //>>excludeEnd("ctx");
@@ -204,9 +197,7 @@ selector: "inspectee",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-var $1;
-$1=self["@inspectee"];
-return $1;
+return self["@inspectee"];
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -246,9 +237,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._variables())._at_(anInstVarName);
-return $1;
+return $recv(self._variables())._at_(anInstVarName);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"instVarObjectAt:",{anInstVarName:anInstVarName},$globals.HLInspectorModel)});
 //>>excludeEnd("ctx");
@@ -271,14 +260,13 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@label"];
-if(($receiver = $2) == null || $receiver.isNil){
-$1=$recv(self._inspectee())._printString();
+var $1,$receiver;
+$1=self["@label"];
+if(($receiver = $1) == null || $receiver.isNil){
+return $recv(self._inspectee())._printString();
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"label",{},$globals.HLInspectorModel)});
 //>>excludeEnd("ctx");
@@ -344,9 +332,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=self._instVarObjectAt_(self._selection());
-return $1;
+return self._instVarObjectAt_(self._selection());
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"selectedInstVarObject",{},$globals.HLInspectorModel)});
 //>>excludeEnd("ctx");
@@ -369,14 +355,13 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@selection"];
-if(($receiver = $2) == null || $receiver.isNil){
-$1="";
+var $1,$receiver;
+$1=self["@selection"];
+if(($receiver = $1) == null || $receiver.isNil){
+return "";
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"selection",{},$globals.HLInspectorModel)});
 //>>excludeEnd("ctx");
@@ -396,12 +381,11 @@ selector: "selection:",
 protocol: 'accessing',
 fn: function (anObject){
 var self=this;
-function $HLInstanceVariableSelected(){return $globals.HLInstanceVariableSelected||(typeof HLInstanceVariableSelected=="undefined"?nil:HLInstanceVariableSelected)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 self["@selection"]=anObject;
-$recv(self._announcer())._announce_($recv($HLInstanceVariableSelected())._on_(self["@selection"]));
+$recv(self._announcer())._announce_($recv($globals.HLInstanceVariableSelected)._on_(self["@selection"]));
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"selection:",{anObject:anObject},$globals.HLInspectorModel)});
@@ -446,18 +430,16 @@ selector: "variables",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-function $Dictionary(){return $globals.Dictionary||(typeof Dictionary=="undefined"?nil:Dictionary)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@variables"];
-if(($receiver = $2) == null || $receiver.isNil){
-$1=$recv($Dictionary())._new();
+var $1,$receiver;
+$1=self["@variables"];
+if(($receiver = $1) == null || $receiver.isNil){
+return $recv($globals.Dictionary)._new();
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"variables",{},$globals.HLInspectorModel)});
 //>>excludeEnd("ctx");
@@ -500,12 +482,10 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$3,$1;
-$2=self._new();
-$recv($2)._environment_(anEnvironment);
-$3=$recv($2)._yourself();
-$1=$3;
-return $1;
+var $1;
+$1=self._new();
+$recv($1)._environment_(anEnvironment);
+return $recv($1)._yourself();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"on:",{anEnvironment:anEnvironment},$globals.HLInspectorModel.klass)});
 //>>excludeEnd("ctx");
@@ -527,19 +507,17 @@ selector: "announcer",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-function $Announcer(){return $globals.Announcer||(typeof Announcer=="undefined"?nil:Announcer)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@announcer"];
-if(($receiver = $2) == null || $receiver.isNil){
-self["@announcer"]=$recv($Announcer())._new();
+var $1,$receiver;
 $1=self["@announcer"];
+if(($receiver = $1) == null || $receiver.isNil){
+self["@announcer"]=$recv($globals.Announcer)._new();
+return self["@announcer"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"announcer",{},$globals.HLInspectorVariablesWidget)});
 //>>excludeEnd("ctx");
@@ -562,9 +540,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=self._variables();
-return $1;
+return self._variables();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"defaultItems",{},$globals.HLInspectorVariablesWidget)});
 //>>excludeEnd("ctx");
@@ -584,11 +560,10 @@ selector: "dive",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLDiveRequested(){return $globals.HLDiveRequested||(typeof HLDiveRequested=="undefined"?nil:HLDiveRequested)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-$recv(self._announcer())._announce_($recv($HLDiveRequested())._new());
+$recv(self._announcer())._announce_($recv($globals.HLDiveRequested)._new());
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"dive",{},$globals.HLInspectorVariablesWidget)});
@@ -609,9 +584,7 @@ selector: "inspector",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-var $1;
-$1=self["@inspector"];
-return $1;
+return self["@inspector"];
 
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
@@ -651,9 +624,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._model())._label();
-return $1;
+return $recv(self._model())._label();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"label",{},$globals.HLInspectorVariablesWidget)});
 //>>excludeEnd("ctx");
@@ -676,9 +647,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._inspector())._model();
-return $1;
+return $recv(self._inspector())._model();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"model",{},$globals.HLInspectorVariablesWidget)});
 //>>excludeEnd("ctx");
@@ -707,9 +676,9 @@ if(!$core.assert($1)){
 self._resetItems();
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLInspectorVariablesWidget.superclass.fn.prototype._refresh.apply($recv(self), []));
+($globals.HLInspectorVariablesWidget.superclass||$boot.dnu).fn.prototype._refresh.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -737,11 +706,11 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
+var $1;
 $1=$recv(html)._button();
 $recv($1)._class_("btn btn-default");
 $recv($1)._with_("Dive");
-$2=$recv($1)._onClick_((function(){
+self["@diveButton"]=$recv($1)._onClick_((function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
 //>>excludeEnd("ctx");
@@ -750,7 +719,6 @@ return self._dive();
 }, function($ctx2) {$ctx2.fillBlock({},$ctx1,1)});
 //>>excludeEnd("ctx");
 }));
-self["@diveButton"]=$2;
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"renderButtonsOn:",{html:html},$globals.HLInspectorVariablesWidget)});
@@ -777,9 +745,9 @@ return $core.withContext(function($ctx1) {
 self._renderHeadOn_(html);
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLInspectorVariablesWidget.superclass.fn.prototype._renderContentOn_.apply($recv(self), [html]));
+($globals.HLInspectorVariablesWidget.superclass||$boot.dnu).fn.prototype._renderContentOn_.apply($recv(self), [html]));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -815,10 +783,10 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
+var $1;
 $1=$recv(html)._div();
 $recv($1)._class_("list-label");
-$2=$recv($1)._with_(self._label());
+$recv($1)._with_(self._label());
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"renderHeadOn:",{html:html},$globals.HLInspectorVariablesWidget)});
@@ -863,9 +831,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLInspectorVariablesWidget.superclass.fn.prototype._selectItem_.apply($recv(self), [anObject]));
+($globals.HLInspectorVariablesWidget.superclass||$boot.dnu).fn.prototype._selectItem_.apply($recv(self), [anObject]));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -893,9 +861,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._model())._selection();
-return $1;
+return $recv(self._model())._selection();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"selection",{},$globals.HLInspectorVariablesWidget)});
 //>>excludeEnd("ctx");
@@ -918,9 +884,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv($recv(self._model())._variables())._keys();
-return $1;
+return $recv($recv(self._model())._variables())._keys();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"variables",{},$globals.HLInspectorVariablesWidget)});
 //>>excludeEnd("ctx");
@@ -946,15 +910,14 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@codeWidget"];
-if(($receiver = $2) == null || $receiver.isNil){
-self["@codeWidget"]=self._defaultCodeWidget();
+var $1,$receiver;
 $1=self["@codeWidget"];
+if(($receiver = $1) == null || $receiver.isNil){
+self["@codeWidget"]=self._defaultCodeWidget();
+return self["@codeWidget"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"codeWidget",{},$globals.HLInspectorWidget)});
 //>>excludeEnd("ctx");
@@ -993,23 +956,19 @@ selector: "defaultCodeWidget",
 protocol: 'defaults',
 fn: function (){
 var self=this;
-function $HLCodeWidget(){return $globals.HLCodeWidget||(typeof HLCodeWidget=="undefined"?nil:HLCodeWidget)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$3,$5,$4,$6,$1;
-$2=$recv($HLCodeWidget())._new();
-$3=$2;
-$5=self._model();
+var $1,$3,$2;
+$1=$recv($globals.HLCodeWidget)._new();
+$3=self._model();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["model"]=1;
 //>>excludeEnd("ctx");
-$4=$recv($5)._code();
-$recv($3)._model_($4);
-$recv($2)._receiver_($recv(self._model())._inspectee());
-$6=$recv($2)._yourself();
-$1=$6;
-return $1;
+$2=$recv($3)._code();
+$recv($1)._model_($2);
+$recv($1)._receiver_($recv(self._model())._inspectee());
+return $recv($1)._yourself();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"defaultCodeWidget",{},$globals.HLInspectorWidget)});
 //>>excludeEnd("ctx");
@@ -1029,22 +988,19 @@ selector: "displayWidget",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-function $HLInspectorDisplayWidget(){return $globals.HLInspectorDisplayWidget||(typeof HLInspectorDisplayWidget=="undefined"?nil:HLInspectorDisplayWidget)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$3,$4,$1,$receiver;
-$2=self["@displayWidget"];
-if(($receiver = $2) == null || $receiver.isNil){
-$3=$recv($HLInspectorDisplayWidget())._new();
-$recv($3)._inspector_(self);
-$4=$recv($3)._yourself();
-self["@displayWidget"]=$4;
+var $1,$2,$receiver;
 $1=self["@displayWidget"];
+if(($receiver = $1) == null || $receiver.isNil){
+$2=$recv($globals.HLInspectorDisplayWidget)._new();
+$recv($2)._inspector_(self);
+self["@displayWidget"]=$recv($2)._yourself();
+return self["@displayWidget"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"displayWidget",{},$globals.HLInspectorWidget)});
 //>>excludeEnd("ctx");
@@ -1069,9 +1025,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLInspectorWidget.superclass.fn.prototype._initialize.apply($recv(self), []));
+($globals.HLInspectorWidget.superclass||$boot.dnu).fn.prototype._initialize.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -1099,11 +1055,10 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
 $recv(self._model())._inspect_on_(anObject,self);
 $recv(self._codeWidget())._receiver_(anObject);
 self._refreshVariablesWidget();
-$1=self._refreshDisplayWidget();
+self._refreshDisplayWidget();
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"inspect:",{anObject:anObject},$globals.HLInspectorWidget)});
@@ -1127,9 +1082,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._model())._inspectee();
-return $1;
+return $recv(self._model())._inspectee();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"inspectee",{},$globals.HLInspectorWidget)});
 //>>excludeEnd("ctx");
@@ -1176,9 +1129,7 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
-$1=$recv(self._model())._label();
-return $1;
+return $recv(self._model())._label();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"label",{},$globals.HLInspectorWidget)});
 //>>excludeEnd("ctx");
@@ -1198,19 +1149,17 @@ selector: "model",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-function $HLInspectorModel(){return $globals.HLInspectorModel||(typeof HLInspectorModel=="undefined"?nil:HLInspectorModel)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@model"];
-if(($receiver = $2) == null || $receiver.isNil){
-self._model_($recv($HLInspectorModel())._new());
+var $1,$receiver;
 $1=self["@model"];
+if(($receiver = $1) == null || $receiver.isNil){
+self._model_($recv($globals.HLInspectorModel)._new());
+return self["@model"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"model",{},$globals.HLInspectorWidget)});
 //>>excludeEnd("ctx");
@@ -1233,12 +1182,11 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1;
 self["@model"]=aModel;
 $recv(self._codeWidget())._model_($recv(aModel)._code());
 self._observeCodeWidget();
 self._observeVariablesWidget();
-$1=self._observeModel();
+self._observeModel();
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"model:",{aModel:aModel},$globals.HLInspectorWidget)});
@@ -1259,11 +1207,10 @@ selector: "observeCodeWidget",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLDoItExecuted(){return $globals.HLDoItExecuted||(typeof HLDoItExecuted=="undefined"?nil:HLDoItExecuted)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-$recv($recv(self._codeWidget())._announcer())._on_do_($HLDoItExecuted(),(function(){
+$recv($recv(self._codeWidget())._announcer())._on_do_($globals.HLDoItExecuted,(function(){
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx2) {
 //>>excludeEnd("ctx");
@@ -1292,11 +1239,10 @@ selector: "observeModel",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLInstanceVariableSelected(){return $globals.HLInstanceVariableSelected||(typeof HLInstanceVariableSelected=="undefined"?nil:HLInstanceVariableSelected)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-$recv($recv(self._model())._announcer())._on_send_to_($HLInstanceVariableSelected(),"onInstanceVariableSelected",self);
+$recv($recv(self._model())._announcer())._on_send_to_($globals.HLInstanceVariableSelected,"onInstanceVariableSelected",self);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"observeModel",{},$globals.HLInspectorWidget)});
@@ -1317,11 +1263,10 @@ selector: "observeVariablesWidget",
 protocol: 'actions',
 fn: function (){
 var self=this;
-function $HLDiveRequested(){return $globals.HLDiveRequested||(typeof HLDiveRequested=="undefined"?nil:HLDiveRequested)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-$recv($recv(self._variablesWidget())._announcer())._on_send_to_($HLDiveRequested(),"onDive",self);
+$recv($recv(self._variablesWidget())._announcer())._on_send_to_($globals.HLDiveRequested,"onDive",self);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"observeVariablesWidget",{},$globals.HLInspectorWidget)});
@@ -1342,14 +1287,13 @@ selector: "onDive",
 protocol: 'reactions',
 fn: function (){
 var self=this;
-function $HLInspector(){return $globals.HLInspector||(typeof HLInspector=="undefined"?nil:HLInspector)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
-$1=$recv($HLInspector())._new();
+var $1;
+$1=$recv($globals.HLInspector)._new();
 $recv($1)._inspect_($recv(self._model())._selectedInstVarObject());
-$2=$recv($1)._openAsTab();
+$recv($1)._openAsTab();
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"onDive",{},$globals.HLInspectorWidget)});
@@ -1526,11 +1470,10 @@ selector: "register",
 protocol: 'registration',
 fn: function (){
 var self=this;
-function $HLInspector(){return $globals.HLInspector||(typeof HLInspector=="undefined"?nil:HLInspector)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-$recv($HLInspector())._register_(self);
+$recv($globals.HLInspector)._register_(self);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"register",{},$globals.HLInspectorWidget)});
@@ -1551,13 +1494,11 @@ selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
 var self=this;
-function $HLHorizontalSplitter(){return $globals.HLHorizontalSplitter||(typeof HLHorizontalSplitter=="undefined"?nil:HLHorizontalSplitter)}
-function $HLVerticalSplitter(){return $globals.HLVerticalSplitter||(typeof HLVerticalSplitter=="undefined"?nil:HLVerticalSplitter)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 var $1;
-$1=$recv($HLHorizontalSplitter())._with_with_($recv($HLVerticalSplitter())._with_with_(self._variablesWidget(),self._displayWidget()),self._codeWidget());
+$1=$recv($globals.HLHorizontalSplitter)._with_with_($recv($globals.HLVerticalSplitter)._with_with_(self._variablesWidget(),self._displayWidget()),self._codeWidget());
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["with:with:"]=1;
 //>>excludeEnd("ctx");
@@ -1648,19 +1589,18 @@ selector: "unregister",
 protocol: 'registration',
 fn: function (){
 var self=this;
-function $HLInspector(){return $globals.HLInspector||(typeof HLInspector=="undefined"?nil:HLInspector)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLInspectorWidget.superclass.fn.prototype._unregister.apply($recv(self), []));
+($globals.HLInspectorWidget.superclass||$boot.dnu).fn.prototype._unregister.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
-$recv($HLInspector())._unregister_(self);
+$recv($globals.HLInspector)._unregister_(self);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"unregister",{},$globals.HLInspectorWidget)});
@@ -1681,22 +1621,19 @@ selector: "variablesWidget",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-function $HLInspectorVariablesWidget(){return $globals.HLInspectorVariablesWidget||(typeof HLInspectorVariablesWidget=="undefined"?nil:HLInspectorVariablesWidget)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$3,$4,$1,$receiver;
-$2=self["@variablesWidget"];
-if(($receiver = $2) == null || $receiver.isNil){
-$3=$recv($HLInspectorVariablesWidget())._new();
-$recv($3)._inspector_(self);
-$4=$recv($3)._yourself();
-self["@variablesWidget"]=$4;
+var $1,$2,$receiver;
 $1=self["@variablesWidget"];
+if(($receiver = $1) == null || $receiver.isNil){
+$2=$recv($globals.HLInspectorVariablesWidget)._new();
+$recv($2)._inspector_(self);
+self["@variablesWidget"]=$recv($2)._yourself();
+return self["@variablesWidget"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"variablesWidget",{},$globals.HLInspectorWidget)});
 //>>excludeEnd("ctx");
@@ -1725,9 +1662,9 @@ return $core.withContext(function($ctx1) {
 self._setTabLabel_($recv(anObject)._printString());
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLInspector.superclass.fn.prototype._inspect_.apply($recv(self), [anObject]));
+($globals.HLInspector.superclass||$boot.dnu).fn.prototype._inspect_.apply($recv(self), [anObject]));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -1751,9 +1688,6 @@ selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
 var self=this;
-function $HLContainer(){return $globals.HLContainer||(typeof HLContainer=="undefined"?nil:HLContainer)}
-function $HLHorizontalSplitter(){return $globals.HLHorizontalSplitter||(typeof HLHorizontalSplitter=="undefined"?nil:HLHorizontalSplitter)}
-function $HLVerticalSplitter(){return $globals.HLVerticalSplitter||(typeof HLVerticalSplitter=="undefined"?nil:HLVerticalSplitter)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
@@ -1762,12 +1696,12 @@ $4=self._variablesWidget();
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["variablesWidget"]=1;
 //>>excludeEnd("ctx");
-$3=$recv($HLVerticalSplitter())._with_with_($4,self._displayWidget());
-$2=$recv($HLHorizontalSplitter())._with_with_($3,self._codeWidget());
+$3=$recv($globals.HLVerticalSplitter)._with_with_($4,self._displayWidget());
+$2=$recv($globals.HLHorizontalSplitter)._with_with_($3,self._codeWidget());
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["with:with:"]=1;
 //>>excludeEnd("ctx");
-$1=$recv($HLContainer())._with_($2);
+$1=$recv($globals.HLContainer)._with_($2);
 $recv(html)._with_($1);
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.sendIdx["with:"]=1;
@@ -1818,9 +1752,9 @@ return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 (
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
-$ctx1.supercall = true, 
+$ctx1.supercall = true,
 //>>excludeEnd("ctx");
-$globals.HLInspector.klass.superclass.fn.prototype._initialize.apply($recv(self), []));
+($globals.HLInspector.klass.superclass||$boot.dnu).fn.prototype._initialize.apply($recv(self), []));
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 $ctx1.supercall = false;
 //>>excludeEnd("ctx");;
@@ -1848,10 +1782,10 @@ var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $1,$2;
+var $1;
 $1=self._new();
 $recv($1)._openAsTab();
-$2=$recv($1)._inspect_(anObject);
+$recv($1)._inspect_(anObject);
 return self;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"inspect:",{anObject:anObject},$globals.HLInspector.klass)});
@@ -1872,19 +1806,17 @@ selector: "inspectors",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-function $OrderedCollection(){return $globals.OrderedCollection||(typeof OrderedCollection=="undefined"?nil:OrderedCollection)}
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
-var $2,$1,$receiver;
-$2=self["@inspectors"];
-if(($receiver = $2) == null || $receiver.isNil){
-self["@inspectors"]=$recv($OrderedCollection())._new();
+var $1,$receiver;
 $1=self["@inspectors"];
+if(($receiver = $1) == null || $receiver.isNil){
+self["@inspectors"]=$recv($globals.OrderedCollection)._new();
+return self["@inspectors"];
 } else {
-$1=$2;
-};
 return $1;
+};
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 }, function($ctx1) {$ctx1.fill(self,"inspectors",{},$globals.HLInspector.klass)});
 //>>excludeEnd("ctx");
