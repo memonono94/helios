@@ -1056,7 +1056,7 @@ renderContentOn: html
 !
 
 renderHeadOn: html
-	html div 
+	html h2
 		class: 'list-label';
 		with: [
 			html with: self label.
@@ -2337,7 +2337,7 @@ renderTab: aTab on: html
 			with: [
 				((html tag: 'i') class: 'close')
 					onClick: [ self removeTab: aTab ].
-				html span 
+				html h1
 					class: aTab cssClass;
 					title: aTab label;
 					with: aTab label ];
