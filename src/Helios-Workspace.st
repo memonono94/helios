@@ -99,7 +99,7 @@ editorOptions
 		'theme' -> ('helios.editorTheme' settingValueIfAbsent: 'default').
 		'mode' -> 'text/x-stsrc'.
 		'inputStyle' -> 'contenteditable'.
-        'lineNumbers' -> true.
+        'lineNumbers' -> false.
         'enterMode' -> 'flat'.
         'indentWithTabs' -> true.
 		'indentUnit' -> 4.
