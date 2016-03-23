@@ -1,5 +1,6 @@
 # Ignoring Mac Finder files
 .DS_Store
+.idea
 
 # In case amber is also saved in a local Subversion
 .svn
