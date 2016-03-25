@@ -445,7 +445,7 @@ on: aClass selectorsCache: aSelectorsCache
 ! !
 
 HLToolListWidget subclass: #HLClassesListWidget
-	instanceVariableNames: ''
+	instanceVariableNames: 'currentPackage'
 	package: 'Helios-Browser'!
 !HLClassesListWidget commentStamp!
 I render a list of classes in the selected package.!
@@ -460,6 +460,11 @@ cssClassForItem: aClass
 		ifFalse: [ ^ nonMeta heliosClass ]
 !
 
+currentPackageName
+
+	^ currentPackage isNil ifTrue: [''] ifFalse: [ currentPackage name ]
+!
+
 getChildrenOf: aClass
 	^ self items select: [ :each | each superclass = aClass ]
 !
@@ -470,7 +475,7 @@ getRootClassesOf: aCollection
 !
 
 label
-	^ 'Classes'
+	^ self currentPackageName, ' Classes'
 ! !
 
 !HLClassesListWidget methodsFor: 'actions'!
@@ -562,7 +567,13 @@ toggleShowComment
 
 !HLClassesListWidget methodsFor: 'private'!
 
+currentPackage: aPackage
+
+	currentPackage := aPackage.
+!
+
 setItemsForPackage: aPackage
+	self currentPackage: aPackage.
 	self items: (aPackage 
     	ifNil: [ #() ]
   		ifNotNil: [ (aPackage classes 
