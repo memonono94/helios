@@ -1826,7 +1826,7 @@ messageSends: ["theClass:", "new", "selectorsCache:", "yourself"]
 $globals.HLClassCache.klass);
 
 
-$core.addClass('HLClassesListWidget', $globals.HLToolListWidget, [], 'Helios-Browser');
+$core.addClass('HLClassesListWidget', $globals.HLToolListWidget, ['currentPackage'], 'Helios-Browser');
 //>>excludeStart("ide", pragmas.excludeIdeData);
 $globals.HLClassesListWidget.comment="I render a list of classes in the selected package.";
 //>>excludeEnd("ide");
@@ -1859,6 +1859,54 @@ source: "cssClassForItem: aClass\x0a\x09| nonMeta |\x0a\x09nonMeta := aClass the
 referencedClasses: [],
 //>>excludeEnd("ide");
 messageSends: ["theNonMetaClass", "ifTrue:ifFalse:", "respondsTo:", "classTag", "heliosClass"]
+}),
+$globals.HLClassesListWidget);
+
+$core.addMethod(
+$core.method({
+selector: "currentPackage:",
+protocol: 'private',
+fn: function (aPackage){
+var self=this;
+self["@currentPackage"]=aPackage;
+return self;
+
+},
+//>>excludeStart("ide", pragmas.excludeIdeData);
+args: ["aPackage"],
+source: "currentPackage: aPackage\x0a\x0a\x09currentPackage := aPackage.",
+referencedClasses: [],
+//>>excludeEnd("ide");
+messageSends: []
+}),
+$globals.HLClassesListWidget);
+
+$core.addMethod(
+$core.method({
+selector: "currentPackageName",
+protocol: 'accessing',
+fn: function (){
+var self=this;
+//>>excludeStart("ctx", pragmas.excludeDebugContexts);
+return $core.withContext(function($ctx1) {
+//>>excludeEnd("ctx");
+var $1;
+$1=$recv(self["@currentPackage"])._isNil();
+if($core.assert($1)){
+return "";
+} else {
+return $recv(self["@currentPackage"])._name();
+};
+//>>excludeStart("ctx", pragmas.excludeDebugContexts);
+}, function($ctx1) {$ctx1.fill(self,"currentPackageName",{},$globals.HLClassesListWidget)});
+//>>excludeEnd("ctx");
+},
+//>>excludeStart("ide", pragmas.excludeIdeData);
+args: [],
+source: "currentPackageName\x0a\x0a\x09^ currentPackage isNil ifTrue: [''] ifFalse: [ currentPackage name ]",
+referencedClasses: [],
+//>>excludeEnd("ide");
+messageSends: ["ifTrue:ifFalse:", "isNil", "name"]
 }),
 $globals.HLClassesListWidget);
 
@@ -2016,15 +2064,20 @@ selector: "label",
 protocol: 'accessing',
 fn: function (){
 var self=this;
-return "Classes";
-
+//>>excludeStart("ctx", pragmas.excludeDebugContexts);
+return $core.withContext(function($ctx1) {
+//>>excludeEnd("ctx");
+return $recv(self._currentPackageName()).__comma(" Classes");
+//>>excludeStart("ctx", pragmas.excludeDebugContexts);
+}, function($ctx1) {$ctx1.fill(self,"label",{},$globals.HLClassesListWidget)});
+//>>excludeEnd("ctx");
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
 args: [],
-source: "label\x0a\x09^ 'Classes'",
+source: "label\x0a\x09^ self currentPackageName, ' Classes'",
 referencedClasses: [],
 //>>excludeEnd("ide");
-messageSends: []
+messageSends: [",", "currentPackageName"]
 }),
 $globals.HLClassesListWidget);
 
@@ -2956,6 +3009,7 @@ var self=this;
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 var $2,$1,$receiver;
+self._currentPackage_(aPackage);
 if(($receiver = aPackage) == null || $receiver.isNil){
 $1=[];
 } else {
@@ -2989,10 +3043,10 @@ return self;
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
 args: ["aPackage"],
-source: "setItemsForPackage: aPackage\x0a\x09self items: (aPackage \x0a    \x09ifNil: [ #() ]\x0a  \x09\x09ifNotNil: [ (aPackage classes \x0a        \x09collect: [ :each | each theNonMetaClass ]) \x0a            \x09sort: [ :a :b | a name < b name ] ]).",
+source: "setItemsForPackage: aPackage\x0a\x09self currentPackage: aPackage.\x0a\x09self items: (aPackage \x0a    \x09ifNil: [ #() ]\x0a  \x09\x09ifNotNil: [ (aPackage classes \x0a        \x09collect: [ :each | each theNonMetaClass ]) \x0a            \x09sort: [ :a :b | a name < b name ] ]).",
 referencedClasses: [],
 //>>excludeEnd("ide");
-messageSends: ["items:", "ifNil:ifNotNil:", "sort:", "collect:", "classes", "theNonMetaClass", "<", "name"]
+messageSends: ["currentPackage:", "items:", "ifNil:ifNotNil:", "sort:", "collect:", "classes", "theNonMetaClass", "<", "name"]
 }),
 $globals.HLClassesListWidget);
 
