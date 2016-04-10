@@ -13,6 +13,8 @@ $core.method({
 selector: "announcer",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -43,6 +45,8 @@ $core.method({
 selector: "environment",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -72,6 +76,8 @@ $core.method({
 selector: "environment:",
 protocol: 'accessing',
 fn: function (anEnvironment){
+"use strict";
+
 var self=this;
 self["@environment"]=anEnvironment;
 return self;
@@ -91,6 +97,8 @@ $core.method({
 selector: "isBrowserModel",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 return false;
 
@@ -109,6 +117,8 @@ $core.method({
 selector: "isReferencesModel",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 return false;
 
@@ -127,6 +137,8 @@ $core.method({
 selector: "isToolModel",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 return false;
 
@@ -145,6 +157,8 @@ $core.method({
 selector: "manager",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -168,6 +182,8 @@ $core.method({
 selector: "systemAnnouncer",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -191,6 +207,8 @@ $core.method({
 selector: "withChangesDo:",
 protocol: 'error handling',
 fn: function (aBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -237,6 +255,8 @@ $core.method({
 selector: "findClass:",
 protocol: 'finding',
 fn: function (aClass){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -261,6 +281,8 @@ $core.method({
 selector: "findMethod:",
 protocol: 'finding',
 fn: function (aCompiledMethod){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -285,6 +307,8 @@ $core.method({
 selector: "findString:",
 protocol: 'finding',
 fn: function (aString){
+"use strict";
+
 var self=this;
 var foundClass;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -334,6 +358,8 @@ $core.method({
 selector: "addInstVarNamed:",
 protocol: 'actions',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -370,6 +396,8 @@ $core.method({
 selector: "allProtocol",
 protocol: 'defaults',
 fn: function (){
+"use strict";
+
 var self=this;
 return "-- all --";
 
@@ -388,6 +416,8 @@ $core.method({
 selector: "allSelectors",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -411,6 +441,8 @@ $core.method({
 selector: "availableClassNames",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -434,6 +466,8 @@ $core.method({
 selector: "availablePackageNames",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -457,6 +491,8 @@ $core.method({
 selector: "availablePackages",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -480,6 +516,8 @@ $core.method({
 selector: "availableProtocols",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -503,6 +541,8 @@ $core.method({
 selector: "commitPackageOnSuccess:onError:",
 protocol: 'commands actions',
 fn: function (aBlock,anotherBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -527,6 +567,8 @@ $core.method({
 selector: "compilationProtocol",
 protocol: 'private',
 fn: function (){
+"use strict";
+
 var self=this;
 var currentProtocol;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -578,6 +620,8 @@ $core.method({
 selector: "compileClassComment:",
 protocol: 'compiling',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -602,6 +646,8 @@ $core.method({
 selector: "compileClassDefinition:",
 protocol: 'compiling',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -626,6 +672,8 @@ $core.method({
 selector: "compileMethod:",
 protocol: 'compiling',
 fn: function (aString){
+"use strict";
+
 var self=this;
 var method;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -661,6 +709,8 @@ $core.method({
 selector: "copyClassTo:",
 protocol: 'commands actions',
 fn: function (aClassName){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -699,6 +749,8 @@ $core.method({
 selector: "forceSelectedClass:",
 protocol: 'accessing',
 fn: function (aClass){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -735,6 +787,8 @@ $core.method({
 selector: "forceSelectedMethod:",
 protocol: 'accessing',
 fn: function (aMethod){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -771,6 +825,8 @@ $core.method({
 selector: "forceSelectedPackage:",
 protocol: 'accessing',
 fn: function (aPackage){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -807,6 +863,8 @@ $core.method({
 selector: "forceSelectedProtocol:",
 protocol: 'accessing',
 fn: function (aProtocol){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -843,6 +901,8 @@ $core.method({
 selector: "handleCompileError:",
 protocol: 'error handling',
 fn: function (anError){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -872,6 +932,8 @@ $core.method({
 selector: "handleParseError:",
 protocol: 'error handling',
 fn: function (anError){
+"use strict";
+
 var self=this;
 var split,line,column,messageToInsert;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -930,6 +992,8 @@ $core.method({
 selector: "handleUnkownVariableError:",
 protocol: 'error handling',
 fn: function (anError){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -959,6 +1023,8 @@ $core.method({
 selector: "isToolModel",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 return true;
 
@@ -977,6 +1043,8 @@ $core.method({
 selector: "moveClassToPackage:",
 protocol: 'commands actions',
 fn: function (aPackageName){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1009,6 +1077,8 @@ $core.method({
 selector: "moveMethodToClass:",
 protocol: 'commands actions',
 fn: function (aClassName){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1041,6 +1111,8 @@ $core.method({
 selector: "moveMethodToProtocol:",
 protocol: 'commands actions',
 fn: function (aProtocol){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1073,6 +1145,8 @@ $core.method({
 selector: "openClassNamed:",
 protocol: 'commands actions',
 fn: function (aString){
+"use strict";
+
 var self=this;
 var class_;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -1109,6 +1183,8 @@ $core.method({
 selector: "packageToCommit",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1140,6 +1216,8 @@ $core.method({
 selector: "packages",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1163,6 +1241,8 @@ $core.method({
 selector: "removeClass",
 protocol: 'commands actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1215,6 +1295,8 @@ $core.method({
 selector: "removeMethod",
 protocol: 'commands actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1277,6 +1359,8 @@ $core.method({
 selector: "removeProtocol",
 protocol: 'commands actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1324,6 +1408,8 @@ $core.method({
 selector: "renameClassTo:",
 protocol: 'commands actions',
 fn: function (aClassName){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1356,6 +1442,8 @@ $core.method({
 selector: "renamePackageTo:",
 protocol: 'commands actions',
 fn: function (aPackageName){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1388,6 +1476,8 @@ $core.method({
 selector: "renameProtocolTo:",
 protocol: 'commands actions',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1420,6 +1510,8 @@ $core.method({
 selector: "save:",
 protocol: 'actions',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1451,6 +1543,8 @@ $core.method({
 selector: "saveSourceCode",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1475,6 +1569,8 @@ $core.method({
 selector: "selectedClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@selectedClass"];
 
@@ -1493,6 +1589,8 @@ $core.method({
 selector: "selectedClass:",
 protocol: 'accessing',
 fn: function (aClass){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1565,6 +1663,8 @@ $core.method({
 selector: "selectedMethod",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1600,6 +1700,8 @@ $core.method({
 selector: "selectedMethod:",
 protocol: 'accessing',
 fn: function (aCompiledMethod){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1648,6 +1750,8 @@ $core.method({
 selector: "selectedPackage",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@selectedPackage"];
 
@@ -1666,6 +1770,8 @@ $core.method({
 selector: "selectedPackage:",
 protocol: 'accessing',
 fn: function (aPackage){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1706,6 +1812,8 @@ $core.method({
 selector: "selectedProtocol",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@selectedProtocol"];
 
@@ -1724,6 +1832,8 @@ $core.method({
 selector: "selectedProtocol:",
 protocol: 'accessing',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1764,6 +1874,8 @@ $core.method({
 selector: "shouldCompileDefinition:",
 protocol: 'testing',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1795,6 +1907,8 @@ $core.method({
 selector: "unclassifiedProtocol",
 protocol: 'defaults',
 fn: function (){
+"use strict";
+
 var self=this;
 return "as yet unclassified";
 
@@ -1813,6 +1927,8 @@ $core.method({
 selector: "withCompileErrorHandling:",
 protocol: 'error handling',
 fn: function (aBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1892,6 +2008,8 @@ $core.method({
 selector: "withHelperLabelled:do:",
 protocol: 'private',
 fn: function (aString,aBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1951,6 +2069,8 @@ $core.method({
 selector: "on:",
 protocol: 'actions',
 fn: function (anEnvironment){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -1982,6 +2102,8 @@ $core.method({
 selector: "do:on:displaying:",
 protocol: 'progress handling',
 fn: function (aBlock,aCollection,aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2012,6 +2134,8 @@ $core.method({
 selector: "bindKeyDown:keyUp:",
 protocol: 'keybindings',
 fn: function (keyDownBlock,keyUpBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2044,6 +2168,8 @@ $core.method({
 selector: "canHaveFocus",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 return false;
 
@@ -2062,6 +2188,8 @@ $core.method({
 selector: "confirm:ifTrue:",
 protocol: 'actions',
 fn: function (aString,aBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2086,6 +2214,8 @@ $core.method({
 selector: "confirm:ifTrue:ifFalse:",
 protocol: 'actions',
 fn: function (aString,aBlock,anotherBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2110,6 +2240,8 @@ $core.method({
 selector: "cssClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "hl_widget";
 
@@ -2128,6 +2260,8 @@ $core.method({
 selector: "defaultTabLabel",
 protocol: 'defaults',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2151,6 +2285,8 @@ $core.method({
 selector: "execute:",
 protocol: 'actions',
 fn: function (aCommand){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2178,6 +2314,8 @@ $core.method({
 selector: "inform:",
 protocol: 'actions',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2202,6 +2340,8 @@ $core.method({
 selector: "manager",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2225,6 +2365,8 @@ $core.method({
 selector: "openAsTab",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2249,6 +2391,8 @@ $core.method({
 selector: "refresh",
 protocol: 'updating',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2289,6 +2433,8 @@ $core.method({
 selector: "registerBindings",
 protocol: 'keybindings',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2313,6 +2459,8 @@ $core.method({
 selector: "registerBindingsOn:",
 protocol: 'keybindings',
 fn: function (aBindingGroup){
+"use strict";
+
 var self=this;
 return self;
 
@@ -2331,6 +2479,8 @@ $core.method({
 selector: "removeTab",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2355,6 +2505,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 return self;
 
@@ -2373,6 +2525,8 @@ $core.method({
 selector: "renderOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2409,6 +2563,8 @@ $core.method({
 selector: "request:do:",
 protocol: 'actions',
 fn: function (aString,aBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2433,6 +2589,8 @@ $core.method({
 selector: "request:value:do:",
 protocol: 'actions',
 fn: function (aString,valueString,aBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2457,6 +2615,8 @@ $core.method({
 selector: "setTabLabel:",
 protocol: 'accessing',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2487,6 +2647,8 @@ $core.method({
 selector: "tabClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2510,6 +2672,8 @@ $core.method({
 selector: "unbindKeyDownKeyUp",
 protocol: 'keybindings',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2540,6 +2704,8 @@ $core.method({
 selector: "unregister",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 return self;
 
@@ -2558,6 +2724,8 @@ $core.method({
 selector: "wrapper",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@wrapper"];
 
@@ -2577,6 +2745,8 @@ $core.method({
 selector: "canBeOpenAsTab",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 return false;
 
@@ -2595,6 +2765,8 @@ $core.method({
 selector: "openAsTab",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 var instance;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -2621,6 +2793,8 @@ $core.method({
 selector: "tabClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "";
 
@@ -2639,6 +2813,8 @@ $core.method({
 selector: "tabLabel",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "Tab";
 
@@ -2657,6 +2833,8 @@ $core.method({
 selector: "tabPriority",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return (500);
 
@@ -2680,6 +2858,8 @@ $core.method({
 selector: "blur",
 protocol: 'events',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2704,6 +2884,8 @@ $core.method({
 selector: "canHaveFocus",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 return true;
 
@@ -2722,6 +2904,8 @@ $core.method({
 selector: "focus",
 protocol: 'events',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2746,6 +2930,8 @@ $core.method({
 selector: "focusClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "focused";
 
@@ -2764,6 +2950,8 @@ $core.method({
 selector: "hasFocus",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2801,6 +2989,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 return self;
 
@@ -2819,6 +3009,8 @@ $core.method({
 selector: "renderOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2889,6 +3081,8 @@ $core.method({
 selector: "activateFirstListItem",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2913,6 +3107,8 @@ $core.method({
 selector: "activateItem:",
 protocol: 'actions',
 fn: function (anObject){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -2937,6 +3133,8 @@ $core.method({
 selector: "activateListItem:",
 protocol: 'actions',
 fn: function (aListItem){
+"use strict";
+
 var self=this;
 var item;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -2981,6 +3179,8 @@ $core.method({
 selector: "activateNextListItem",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3036,6 +3236,8 @@ $core.method({
 selector: "activatePreviousListItem",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3060,6 +3262,8 @@ $core.method({
 selector: "activeItemCssClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "active";
 
@@ -3078,6 +3282,8 @@ $core.method({
 selector: "buttonsDivCssClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "pane_actions form-group";
 
@@ -3096,6 +3302,8 @@ $core.method({
 selector: "cssClassForItem:",
 protocol: 'accessing',
 fn: function (anObject){
+"use strict";
+
 var self=this;
 return "";
 
@@ -3114,6 +3322,8 @@ $core.method({
 selector: "defaultItems",
 protocol: 'defaults',
 fn: function (){
+"use strict";
+
 var self=this;
 return [];
 
@@ -3132,6 +3342,8 @@ $core.method({
 selector: "ensureVisible:",
 protocol: 'actions',
 fn: function (aListItem){
+"use strict";
+
 var self=this;
 var parent,position;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -3253,6 +3465,8 @@ $core.method({
 selector: "findListItemFor:",
 protocol: 'accessing',
 fn: function (anObject){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3291,6 +3505,8 @@ $core.method({
 selector: "focus",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3332,6 +3548,8 @@ $core.method({
 selector: "items",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3362,6 +3580,8 @@ $core.method({
 selector: "items:",
 protocol: 'accessing',
 fn: function (aCollection){
+"use strict";
+
 var self=this;
 self["@items"]=aCollection;
 return self;
@@ -3381,6 +3601,8 @@ $core.method({
 selector: "listCssClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "nav nav-pills nav-stacked";
 
@@ -3399,6 +3621,8 @@ $core.method({
 selector: "listCssClassForItem:",
 protocol: 'accessing',
 fn: function (anObject){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3428,6 +3652,8 @@ $core.method({
 selector: "positionOf:",
 protocol: 'accessing',
 fn: function (aListItem){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3454,6 +3680,8 @@ $core.method({
 selector: "reactivateListItem:",
 protocol: 'actions',
 fn: function (aListItem){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3479,6 +3707,8 @@ $core.method({
 selector: "refresh",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3520,6 +3750,8 @@ $core.method({
 selector: "renderButtonsOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 return self;
 
@@ -3538,6 +3770,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3600,6 +3834,8 @@ $core.method({
 selector: "renderItem:on:",
 protocol: 'rendering',
 fn: function (anObject,html){
+"use strict";
+
 var self=this;
 var li;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -3667,6 +3903,8 @@ $core.method({
 selector: "renderItemLabel:on:",
 protocol: 'rendering',
 fn: function (anObject,html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3691,6 +3929,8 @@ $core.method({
 selector: "renderListOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3723,6 +3963,8 @@ $core.method({
 selector: "reselectItem:",
 protocol: 'actions',
 fn: function (anObject){
+"use strict";
+
 var self=this;
 return self;
 
@@ -3741,6 +3983,8 @@ $core.method({
 selector: "selectItem:",
 protocol: 'actions',
 fn: function (anObject){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3765,6 +4009,8 @@ $core.method({
 selector: "selectedItem",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@selectedItem"];
 
@@ -3783,6 +4029,8 @@ $core.method({
 selector: "selectedItem:",
 protocol: 'accessing',
 fn: function (anObject){
+"use strict";
+
 var self=this;
 self["@selectedItem"]=anObject;
 return self;
@@ -3802,6 +4050,8 @@ $core.method({
 selector: "setupKeyBindings",
 protocol: 'events',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3864,6 +4114,8 @@ $core.method({
 selector: "next",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@next"];
 
@@ -3882,6 +4134,8 @@ $core.method({
 selector: "next:",
 protocol: 'accessing',
 fn: function (aWidget){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3911,6 +4165,8 @@ $core.method({
 selector: "nextFocus",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3944,6 +4200,8 @@ $core.method({
 selector: "previous",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@previous"];
 
@@ -3962,6 +4220,8 @@ $core.method({
 selector: "previous:",
 protocol: 'accessing',
 fn: function (aWidget){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -3991,6 +4251,8 @@ $core.method({
 selector: "previousFocus",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4024,6 +4286,8 @@ $core.method({
 selector: "setupKeyBindings",
 protocol: 'events',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4087,6 +4351,8 @@ $core.method({
 selector: "activateListItem:",
 protocol: 'actions',
 fn: function (anItem){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4126,6 +4392,8 @@ $core.method({
 selector: "activateNextListItem",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4165,6 +4433,8 @@ $core.method({
 selector: "activatePreviousListItem",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4204,6 +4474,8 @@ $core.method({
 selector: "commandCategory",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4227,6 +4499,8 @@ $core.method({
 selector: "label",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "List";
 
@@ -4245,6 +4519,8 @@ $core.method({
 selector: "menuCommands",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4320,6 +4596,8 @@ $core.method({
 selector: "model",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@model"];
 
@@ -4338,6 +4616,8 @@ $core.method({
 selector: "model:",
 protocol: 'accessing',
 fn: function (aBrowserModel){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4364,6 +4644,8 @@ $core.method({
 selector: "observeModel",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 return self;
 
@@ -4382,6 +4664,8 @@ $core.method({
 selector: "observeSystem",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 return self;
 
@@ -4400,6 +4684,8 @@ $core.method({
 selector: "reactivateListItem:",
 protocol: 'actions',
 fn: function (anItem){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4439,6 +4725,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4471,6 +4759,8 @@ $core.method({
 selector: "renderHeadOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4510,6 +4800,8 @@ $core.method({
 selector: "renderMenuOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 var commands;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -4628,6 +4920,8 @@ $core.method({
 selector: "selectedItem:",
 protocol: 'accessing',
 fn: function (anItem){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4660,6 +4954,8 @@ $core.method({
 selector: "unregister",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4702,6 +4998,8 @@ $core.method({
 selector: "updateMenu",
 protocol: 'updating',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4749,6 +5047,8 @@ $core.method({
 selector: "on:",
 protocol: 'instance creation',
 fn: function (aModel){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4780,6 +5080,8 @@ $core.method({
 selector: "callback",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4811,6 +5113,8 @@ $core.method({
 selector: "callback:",
 protocol: 'accessing',
 fn: function (aBlock){
+"use strict";
+
 var self=this;
 self["@callback"]=aBlock;
 return self;
@@ -4830,6 +5134,8 @@ $core.method({
 selector: "renderItemLabel:on:",
 protocol: 'rendering',
 fn: function (aTab,html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4857,6 +5163,8 @@ $core.method({
 selector: "selectItem:",
 protocol: 'actions',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4895,6 +5203,8 @@ $core.method({
 selector: "informationString",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4924,6 +5234,8 @@ $core.method({
 selector: "informationString:",
 protocol: 'accessing',
 fn: function (anObject){
+"use strict";
+
 var self=this;
 self["@informationString"]=anObject;
 return self;
@@ -4943,6 +5255,8 @@ $core.method({
 selector: "remove",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -4996,6 +5310,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5024,6 +5340,8 @@ $core.method({
 selector: "show",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5054,6 +5372,8 @@ $core.method({
 selector: "activate:",
 protocol: 'actions',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5078,6 +5398,8 @@ $core.method({
 selector: "activeTab",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5101,6 +5423,8 @@ $core.method({
 selector: "addTab:",
 protocol: 'actions',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5125,6 +5449,8 @@ $core.method({
 selector: "announcer",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5155,6 +5481,8 @@ $core.method({
 selector: "confirm:ifFalse:",
 protocol: 'actions',
 fn: function (aString,aBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5181,6 +5509,8 @@ $core.method({
 selector: "confirm:ifTrue:",
 protocol: 'actions',
 fn: function (aString,aBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5207,6 +5537,8 @@ $core.method({
 selector: "confirm:ifTrue:ifFalse:",
 protocol: 'actions',
 fn: function (aString,aBlock,anotherBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5236,6 +5568,8 @@ $core.method({
 selector: "defaultEnvironment",
 protocol: 'defaults',
 fn: function (){
+"use strict";
+
 var self=this;
 var parent,parentSmalltalkGlobals;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -5322,6 +5656,8 @@ $core.method({
 selector: "environment",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5352,6 +5688,8 @@ $core.method({
 selector: "environment:",
 protocol: 'accessing',
 fn: function (anEnvironment){
+"use strict";
+
 var self=this;
 self["@environment"]=anEnvironment;
 return self;
@@ -5371,6 +5709,8 @@ $core.method({
 selector: "handleLossOfEnvironmentWithParent:",
 protocol: 'actions',
 fn: function (parent){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5404,6 +5744,8 @@ $core.method({
 selector: "history",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5434,6 +5776,8 @@ $core.method({
 selector: "history:",
 protocol: 'accessing',
 fn: function (aCollection){
+"use strict";
+
 var self=this;
 self["@history"]=aCollection;
 return self;
@@ -5453,6 +5797,8 @@ $core.method({
 selector: "inform:",
 protocol: 'actions',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5480,6 +5826,8 @@ $core.method({
 selector: "initialize",
 protocol: 'initialization',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5512,6 +5860,8 @@ $core.method({
 selector: "keyBinder",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5535,6 +5885,8 @@ $core.method({
 selector: "registerErrorHandler",
 protocol: 'services',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5566,6 +5918,8 @@ $core.method({
 selector: "registerFinder",
 protocol: 'services',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5597,6 +5951,8 @@ $core.method({
 selector: "registerInspector",
 protocol: 'services',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5622,6 +5978,8 @@ $core.method({
 selector: "registerProgressHandler",
 protocol: 'services',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5653,6 +6011,8 @@ $core.method({
 selector: "registerServices",
 protocol: 'private',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5681,6 +6041,8 @@ $core.method({
 selector: "registerTranscript",
 protocol: 'services',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5705,6 +6067,8 @@ $core.method({
 selector: "removeActiveTab",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5729,6 +6093,8 @@ $core.method({
 selector: "removeBeforeUnloadMessage",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5753,6 +6119,8 @@ $core.method({
 selector: "removeTabForWidget:",
 protocol: 'actions',
 fn: function (aWidget){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5777,6 +6145,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5807,6 +6177,8 @@ $core.method({
 selector: "renderDefaultTabs",
 protocol: 'rendering',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5839,6 +6211,8 @@ $core.method({
 selector: "request:do:",
 protocol: 'actions',
 fn: function (aString,aBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5863,6 +6237,8 @@ $core.method({
 selector: "request:value:do:",
 protocol: 'actions',
 fn: function (aString,valueString,aBlock){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5892,6 +6268,8 @@ $core.method({
 selector: "setEditorTheme:",
 protocol: 'accessing',
 fn: function (aTheme){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5916,6 +6294,8 @@ $core.method({
 selector: "setTheme:",
 protocol: 'accessing',
 fn: function (aTheme){
+"use strict";
+
 var self=this;
 var currentTheme;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -5946,6 +6326,8 @@ $core.method({
 selector: "setup",
 protocol: 'initialization',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -5982,6 +6364,8 @@ $core.method({
 selector: "setupEvents",
 protocol: 'private',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6052,6 +6436,8 @@ $core.method({
 selector: "setupTheme",
 protocol: 'private',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6077,6 +6463,8 @@ $core.method({
 selector: "tabWidth",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6100,6 +6488,8 @@ $core.method({
 selector: "tabs",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6123,6 +6513,8 @@ $core.method({
 selector: "tabsWidget",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6155,6 +6547,8 @@ $core.method({
 selector: "current",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6185,6 +6579,8 @@ $core.method({
 selector: "new",
 protocol: 'instance creation',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6209,6 +6605,8 @@ $core.method({
 selector: "setup",
 protocol: 'initialization',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6248,6 +6646,8 @@ $core.method({
 selector: "giveFocusToButton:",
 protocol: 'private',
 fn: function (aButton){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6272,6 +6672,8 @@ $core.method({
 selector: "hasButtons",
 protocol: 'rendering',
 fn: function (){
+"use strict";
+
 var self=this;
 return true;
 
@@ -6290,6 +6692,8 @@ $core.method({
 selector: "remove",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6336,6 +6740,8 @@ $core.method({
 selector: "renderButtonsOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 return self;
 
@@ -6354,6 +6760,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 var confirmButton;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -6401,6 +6809,8 @@ $core.method({
 selector: "renderMainOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 return self;
 
@@ -6419,6 +6829,8 @@ $core.method({
 selector: "setupKeyBindings",
 protocol: 'rendering',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6455,6 +6867,8 @@ $core.method({
 selector: "show",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6485,6 +6899,8 @@ $core.method({
 selector: "actionBlock",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6516,6 +6932,8 @@ $core.method({
 selector: "actionBlock:",
 protocol: 'accessing',
 fn: function (aBlock){
+"use strict";
+
 var self=this;
 self["@actionBlock"]=aBlock;
 return self;
@@ -6535,6 +6953,8 @@ $core.method({
 selector: "cancel",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6560,6 +6980,8 @@ $core.method({
 selector: "cancelBlock",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6591,6 +7013,8 @@ $core.method({
 selector: "cancelBlock:",
 protocol: 'accessing',
 fn: function (aBlock){
+"use strict";
+
 var self=this;
 self["@cancelBlock"]=aBlock;
 return self;
@@ -6610,6 +7034,8 @@ $core.method({
 selector: "cancelButtonLabel",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6639,6 +7065,8 @@ $core.method({
 selector: "cancelButtonLabel:",
 protocol: 'accessing',
 fn: function (aString){
+"use strict";
+
 var self=this;
 var $1;
 self["@cancelButtonLabel"]=aString;
@@ -6660,6 +7088,8 @@ $core.method({
 selector: "confirm",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6685,6 +7115,8 @@ $core.method({
 selector: "confirmButtonLabel",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6714,6 +7146,8 @@ $core.method({
 selector: "confirmButtonLabel:",
 protocol: 'accessing',
 fn: function (aString){
+"use strict";
+
 var self=this;
 var $1;
 self["@confirmButtonLabel"]=aString;
@@ -6735,6 +7169,8 @@ $core.method({
 selector: "confirmationString",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -6764,6 +7200,8 @@ $core.method({
 selector: "confirmationString:",
 protocol: 'accessing',
 fn: function (aString){
+"use strict";
+
 var self=this;
 self["@confirmationString"]=aString;
 return self;
@@ -6783,6 +7221,8 @@ $core.method({
 selector: "renderButtonsOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 var confirmButton;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -6863,12 +7303,14 @@ $core.method({
 selector: "renderMainOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
 //>>excludeEnd("ctx");
 var $1;
-$1=$recv(html)._span();
+$1=$recv(html)._h2();
 $recv($1)._class_("head");
 $recv($1)._with_(self._confirmationString());
 return self;
@@ -6878,10 +7320,10 @@ return self;
 },
 //>>excludeStart("ide", pragmas.excludeIdeData);
 args: ["html"],
-source: "renderMainOn: html\x0a\x09html span \x0a\x09\x09class: 'head'; \x0a\x09\x09with: self confirmationString",
+source: "renderMainOn: html\x0a\x09html h2 \x0a\x09\x09class: 'head'; \x0a\x09\x09with: self confirmationString",
 referencedClasses: [],
 //>>excludeEnd("ide");
-messageSends: ["class:", "span", "with:", "confirmationString"]
+messageSends: ["class:", "h2", "with:", "confirmationString"]
 }),
 $globals.HLConfirmationWidget);
 
@@ -6896,6 +7338,8 @@ $core.method({
 selector: "beMultiline",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 self["@multiline"]=true;
 return self;
@@ -6915,6 +7359,8 @@ $core.method({
 selector: "beSingleline",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 self["@multiline"]=false;
 return self;
@@ -6934,6 +7380,8 @@ $core.method({
 selector: "confirm",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 var val;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -6961,6 +7409,8 @@ $core.method({
 selector: "cssClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "large";
 
@@ -6979,6 +7429,8 @@ $core.method({
 selector: "giveFocusToButton:",
 protocol: 'private',
 fn: function (aButton){
+"use strict";
+
 var self=this;
 return self;
 
@@ -6997,6 +7449,8 @@ $core.method({
 selector: "isMultiline",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7026,6 +7480,8 @@ $core.method({
 selector: "renderMainOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7083,6 +7539,8 @@ $core.method({
 selector: "value",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7112,6 +7570,8 @@ $core.method({
 selector: "value:",
 protocol: 'accessing',
 fn: function (aString){
+"use strict";
+
 var self=this;
 self["@value"]=aString;
 return self;
@@ -7137,6 +7597,8 @@ $core.method({
 selector: "addProgressBar:",
 protocol: 'actions',
 fn: function (aProgressBar){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7163,6 +7625,8 @@ $core.method({
 selector: "do:on:displaying:",
 protocol: 'actions',
 fn: function (aBlock,aCollection,aString){
+"use strict";
+
 var self=this;
 var progressBar;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -7196,6 +7660,8 @@ $core.method({
 selector: "flush",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7228,6 +7694,8 @@ $core.method({
 selector: "hasButtons",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 return false;
 
@@ -7246,6 +7714,8 @@ $core.method({
 selector: "isVisible",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7275,6 +7745,8 @@ $core.method({
 selector: "progressBars",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7305,6 +7777,8 @@ $core.method({
 selector: "remove",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7342,6 +7816,8 @@ $core.method({
 selector: "removeProgressBar:",
 protocol: 'actions',
 fn: function (aProgressBar){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7386,6 +7862,8 @@ $core.method({
 selector: "renderMainOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7418,6 +7896,8 @@ $core.method({
 selector: "show",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7457,6 +7937,8 @@ $core.method({
 selector: "default",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7492,6 +7974,8 @@ $core.method({
 selector: "cancel",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7517,6 +8001,8 @@ $core.method({
 selector: "cancelCallback",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7548,6 +8034,8 @@ $core.method({
 selector: "cancelCallback:",
 protocol: 'accessing',
 fn: function (aBlock){
+"use strict";
+
 var self=this;
 self["@cancelCallback"]=aBlock;
 return self;
@@ -7567,6 +8055,8 @@ $core.method({
 selector: "confirm",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7592,6 +8082,8 @@ $core.method({
 selector: "confirmCallback",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7623,6 +8115,8 @@ $core.method({
 selector: "confirmCallback:",
 protocol: 'accessing',
 fn: function (aBlock){
+"use strict";
+
 var self=this;
 self["@confirmCallback"]=aBlock;
 return self;
@@ -7642,6 +8136,8 @@ $core.method({
 selector: "renderButtonsOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 var confirmButton;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -7722,6 +8218,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7754,6 +8252,8 @@ $core.method({
 selector: "renderMainOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7785,6 +8285,8 @@ $core.method({
 selector: "renderTab:on:",
 protocol: 'rendering',
 fn: function (aTab,html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7812,6 +8314,8 @@ $core.method({
 selector: "renderTabsOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7874,6 +8378,8 @@ $core.method({
 selector: "selectCallback",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7905,6 +8411,8 @@ $core.method({
 selector: "selectCallback:",
 protocol: 'accessing',
 fn: function (aBlock){
+"use strict";
+
 var self=this;
 self["@selectCallback"]=aBlock;
 return self;
@@ -7924,6 +8432,8 @@ $core.method({
 selector: "selectTab:",
 protocol: 'actions',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -7949,6 +8459,8 @@ $core.method({
 selector: "selectedTab",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@selectedTab"];
 
@@ -7967,6 +8479,8 @@ $core.method({
 selector: "selectedTab:",
 protocol: 'accessing',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 self["@selectedTab"]=aTab;
 return self;
@@ -7986,6 +8500,8 @@ $core.method({
 selector: "setupKeyBindings",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8030,6 +8546,8 @@ $core.method({
 selector: "tabList",
 protocol: 'rendering',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8074,6 +8592,8 @@ $core.method({
 selector: "tabs",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8103,6 +8623,8 @@ $core.method({
 selector: "tabs:",
 protocol: 'accessing',
 fn: function (aCollection){
+"use strict";
+
 var self=this;
 self["@tabs"]=aCollection;
 return self;
@@ -8128,6 +8650,8 @@ $core.method({
 selector: "collection",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@collection"];
 
@@ -8146,6 +8670,8 @@ $core.method({
 selector: "collection:",
 protocol: 'accessing',
 fn: function (aCollection){
+"use strict";
+
 var self=this;
 self["@collection"]=aCollection;
 return self;
@@ -8165,6 +8691,8 @@ $core.method({
 selector: "evaluateAt:",
 protocol: 'actions',
 fn: function (anInteger){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8228,6 +8756,8 @@ $core.method({
 selector: "label",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@label"];
 
@@ -8246,6 +8776,8 @@ $core.method({
 selector: "label:",
 protocol: 'accessing',
 fn: function (aString){
+"use strict";
+
 var self=this;
 self["@label"]=aString;
 return self;
@@ -8265,6 +8797,8 @@ $core.method({
 selector: "parent",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@parent"];
 
@@ -8283,6 +8817,8 @@ $core.method({
 selector: "parent:",
 protocol: 'accessing',
 fn: function (aProgress){
+"use strict";
+
 var self=this;
 self["@parent"]=aProgress;
 return self;
@@ -8302,6 +8838,8 @@ $core.method({
 selector: "remove",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8326,6 +8864,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8385,6 +8925,8 @@ $core.method({
 selector: "start",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8409,6 +8951,8 @@ $core.method({
 selector: "updateProgress:",
 protocol: 'actions',
 fn: function (anInteger){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8433,6 +8977,8 @@ $core.method({
 selector: "workBlock",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@workBlock"];
 
@@ -8451,6 +8997,8 @@ $core.method({
 selector: "workBlock:",
 protocol: 'accessing',
 fn: function (aBlock){
+"use strict";
+
 var self=this;
 self["@workBlock"]=aBlock;
 return self;
@@ -8472,6 +9020,8 @@ $core.method({
 selector: "default",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8504,6 +9054,8 @@ $core.method({
 selector: "findMatches:andRender:",
 protocol: 'actions',
 fn: function (aQueryString,aRenderCallback){
+"use strict";
+
 var self=this;
 var matches;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -8538,6 +9090,8 @@ $core.method({
 selector: "ghostText",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "Search... (Ctrl+F)";
 
@@ -8556,6 +9110,8 @@ $core.method({
 selector: "inputCompletion",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8589,6 +9145,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8650,6 +9208,8 @@ $core.method({
 selector: "search:",
 protocol: 'actions',
 fn: function (aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8688,6 +9248,8 @@ $core.method({
 selector: "activate",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8712,6 +9274,8 @@ $core.method({
 selector: "add",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8737,6 +9301,8 @@ $core.method({
 selector: "cssClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8760,6 +9326,8 @@ $core.method({
 selector: "focus",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8792,6 +9360,8 @@ $core.method({
 selector: "hide",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8822,6 +9392,8 @@ $core.method({
 selector: "isActive",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8845,6 +9417,8 @@ $core.method({
 selector: "label",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8874,6 +9448,8 @@ $core.method({
 selector: "label:",
 protocol: 'accessing',
 fn: function (aString){
+"use strict";
+
 var self=this;
 self["@label"]=aString;
 return self;
@@ -8893,6 +9469,8 @@ $core.method({
 selector: "manager",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8916,6 +9494,8 @@ $core.method({
 selector: "observeManager",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8940,6 +9520,8 @@ $core.method({
 selector: "onTabLabelChanged:",
 protocol: 'reactions',
 fn: function (anAnnouncement){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -8987,6 +9569,8 @@ $core.method({
 selector: "registerBindings",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9011,6 +9595,8 @@ $core.method({
 selector: "remove",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9046,6 +9632,8 @@ $core.method({
 selector: "renderOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9074,6 +9662,8 @@ $core.method({
 selector: "renderTab",
 protocol: 'rendering',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9117,6 +9707,8 @@ $core.method({
 selector: "show",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9151,6 +9743,8 @@ $core.method({
 selector: "unregister",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9175,6 +9769,8 @@ $core.method({
 selector: "widget",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@widget"];
 
@@ -9193,6 +9789,8 @@ $core.method({
 selector: "widget:",
 protocol: 'accessing',
 fn: function (aWidget){
+"use strict";
+
 var self=this;
 self["@widget"]=aWidget;
 return self;
@@ -9213,6 +9811,8 @@ $core.method({
 selector: "on:labelled:",
 protocol: 'instance creation',
 fn: function (aWidget,aString){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9242,6 +9842,8 @@ $core.method({
 selector: "activate:",
 protocol: 'actions',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9276,6 +9878,8 @@ $core.method({
 selector: "activateNextTab",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 var nextTab;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -9333,6 +9937,8 @@ $core.method({
 selector: "activatePreviousTab",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 var previousTab;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -9390,6 +9996,8 @@ $core.method({
 selector: "activeTab",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return self["@activeTab"];
 
@@ -9408,6 +10016,8 @@ $core.method({
 selector: "addTab:",
 protocol: 'actions',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9433,6 +10043,8 @@ $core.method({
 selector: "addToHistory:",
 protocol: 'actions',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9458,6 +10070,8 @@ $core.method({
 selector: "disableSelection",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 self["@selectionDisabled"]=true;
 return self;
@@ -9477,6 +10091,8 @@ $core.method({
 selector: "enableSelection",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 self["@selectionDisabled"]=false;
 return self;
@@ -9496,6 +10112,8 @@ $core.method({
 selector: "history",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9526,6 +10144,8 @@ $core.method({
 selector: "history:",
 protocol: 'accessing',
 fn: function (aCollection){
+"use strict";
+
 var self=this;
 self["@history"]=aCollection;
 return self;
@@ -9545,6 +10165,8 @@ $core.method({
 selector: "isSelectionDisabled",
 protocol: 'testing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9574,6 +10196,8 @@ $core.method({
 selector: "removeActiveTab",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9598,6 +10222,8 @@ $core.method({
 selector: "removeFromHistory:",
 protocol: 'actions',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9630,6 +10256,8 @@ $core.method({
 selector: "removeTab:",
 protocol: 'actions',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9680,6 +10308,8 @@ $core.method({
 selector: "removeTabForWidget:",
 protocol: 'actions',
 fn: function (aWidget){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9719,6 +10349,8 @@ $core.method({
 selector: "renderAddOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9848,6 +10480,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -9909,6 +10543,8 @@ $core.method({
 selector: "renderTab:on:",
 protocol: 'rendering',
 fn: function (aTab,html){
+"use strict";
+
 var self=this;
 var li;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -10012,6 +10648,8 @@ $core.method({
 selector: "renderTabsOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 var ul;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
@@ -10090,6 +10728,8 @@ $core.method({
 selector: "setupEvents",
 protocol: 'private',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10165,6 +10805,8 @@ $core.method({
 selector: "show:",
 protocol: 'rendering',
 fn: function (aTab){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10199,6 +10841,8 @@ $core.method({
 selector: "spotlight",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10229,6 +10873,8 @@ $core.method({
 selector: "tabWidth",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10252,6 +10898,8 @@ $core.method({
 selector: "tabs",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10282,6 +10930,8 @@ $core.method({
 selector: "updateTabsOrder",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10318,6 +10968,8 @@ $core.method({
 selector: "cssClass",
 protocol: 'accessing',
 fn: function (){
+"use strict";
+
 var self=this;
 return "welcome";
 
@@ -10336,6 +10988,8 @@ $core.method({
 selector: "openClassBrowser",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10360,6 +11014,8 @@ $core.method({
 selector: "openHelp",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 return self;
 
@@ -10378,6 +11034,8 @@ $core.method({
 selector: "openTestRunner",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10402,6 +11060,8 @@ $core.method({
 selector: "openWorkspace",
 protocol: 'actions',
 fn: function (){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10426,6 +11086,8 @@ $core.method({
 selector: "renderButtonsOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10510,6 +11172,8 @@ $core.method({
 selector: "renderContentOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
@@ -10535,6 +11199,8 @@ $core.method({
 selector: "renderHelpOn:",
 protocol: 'rendering',
 fn: function (html){
+"use strict";
+
 var self=this;
 //>>excludeStart("ctx", pragmas.excludeDebugContexts);
 return $core.withContext(function($ctx1) {
