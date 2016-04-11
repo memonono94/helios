@@ -1608,7 +1608,7 @@ renderButtonsOn: html
 !
 
 renderMainOn: html
-	html span 
+	html h2 
 		class: 'head'; 
 		with: self confirmationString
 ! !
